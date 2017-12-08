@@ -8,3 +8,6 @@ The a challenge I have brought upon myself that will encourage me to code at lea
 ## Day 2: December 6th, 2017
 ### What I did: Was introduced to a couple of CSS Grid basics
 ### Thoughts: Introduced to grid-template, grid-row-start/end and their shorthands. I got caught up in some VSCode stuff at the beginning... Its fast but I don't like not having all of my sweet Atom plugins.
+
+## Day 3: December 7th 2017
+###What I did: My wife and I went out to dinner with friends this evening so I took it very light tonight. I finished the lecture series on how to define grids and change there sizes, order, etc... All introductory stuff. I am feeling pretty good about this course.. And I except that fact I won't be able to hit this hard every single night.
