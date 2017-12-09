@@ -1,12 +1,12 @@
 .grid {
     display: grid;
-    /* grid-template-rows: 100px 200px;
-    grid-template-columns: 200px auto 150px; */
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 200px auto 150px;
     /* Short hand for gtr and gtc */
-    grid-template: 100px 200px / 200px auto 150px;
+    /* grid-template: 100px 200px / 200px auto 150px; */
     /* grid-row-gap: 10px;
     grid-column-gap: 10px; */
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 
 .grid div:nth-child(6) {

@@ -1,0 +1,58 @@
+* {
+    color: rgb(90, 4, 64);
+    text-shadow: 1px 1px 0 rgba(240, 179, 13, 0.856);
+    box-sizing: border-box;
+    font-family: Ubuntu, Helvetica, Verdana, Arial, sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 22px;
+}
+
+body {
+    padding: 50px;
+}
+
+code {
+    margin: 1px 5px;
+    padding: 2px 5px 1px 5px;
+    font-family: monospace;
+    border-radius: 2px;
+    border: 1px dotted #fff;
+}
+
+p {
+    margin: 25px 10px;
+}
+
+h2 {
+    text-align:  center;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.outlined {
+    height: 200px;
+    border: 1px solid #fff;
+    margin-bottom: 50px
+}
+
+.grid > * {
+    border: 1px solid #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid a {
+    display: block;
+}
+
+.grid > a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    transition: background-color ease 0.5s;
+}
