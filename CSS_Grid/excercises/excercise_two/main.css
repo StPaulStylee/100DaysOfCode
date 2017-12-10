@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template: 50px 50px / auto auto auto auto;
+}
+
+.container > * {
+    background-color: purple;
+    border: 2px solid white;
+}
+
+.container div:first-child {
+    order: 2;
+}
+
+.container div:nth-child(3) {
+    order: -1;
+}
+
+.container div:nth-child(5) {
+    order: 1;
+}
