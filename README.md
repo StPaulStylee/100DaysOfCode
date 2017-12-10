@@ -24,3 +24,9 @@ My wife and I went out to dinner with friends this evening so I took it very lig
 Completed an excercise that tested my introductory grid knowledge.
 ### Thoughts:
 It was a lot tricker to do it on my own than I would have expected. I actually had to take a peak at the solution to job my memory. I am glad I did though because after getting a small look, I was able to work through it and come to the solution on my own.
+
+## Day 5: December 9th, 2017
+### What I did:
+Complete an excercise on grid order.
+### Thoughts:
+Another day where I had little time to do much of anything. I completed one simple excercise. But as I said before, there will be days liket his, especially on the weekends. Over 100 days, no matter how short some days efforts are, the work and experience will add up.
