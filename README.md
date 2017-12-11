@@ -30,3 +30,9 @@ It was a lot tricker to do it on my own than I would have expected. I actually h
 Complete an excercise on grid order.
 ### Thoughts:
 Another day where I had little time to do much of anything. I completed one simple excercise. But as I said before, there will be days liket his, especially on the weekends. Over 100 days, no matter how short some days efforts are, the work and experience will add up.
+
+## Day 6: December 10, 2017
+### What I did:
+Learned more advanced CSS Grid techniques such as grid-template-areas and the repeate technique.
+### Thoughts:
+Ah, my tutorial moves hella fast and I know I missed some things. For example, using naming in my repeat funtion... WHAT? I will go through the excerices tomorrow and hopefully get a better grasp.
