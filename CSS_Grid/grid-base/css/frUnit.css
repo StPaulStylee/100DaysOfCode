@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  /* fr is a command that takes up the remaining space in a row...
+  so below, we have a fixed column at 100px, a column that takes up
+  2 times the remaining space, and one column that takes up 1 times the remaining
+  space. Notice how 2fr is twice as large as 1fr */
+  grid-template: 100px 100px 100px / 100px 2fr 1fr;
+
+}

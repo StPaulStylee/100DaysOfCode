@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  /* Using minmax with auto-fill will cause it to always
+  take the max because auto-fills aim is to take up as
+  much space as possible - unless max is a dynamic value,
+  then it will use the min*/
+  grid-template: 100px 100px 100px / repeat(auto-fill, minmax(100px,auto));
+}

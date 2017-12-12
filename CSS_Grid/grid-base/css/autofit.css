@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  /* auto-fit is the same as auto fill in terms of how it sizes it
+  columns. However, auto-fit will collapse any remaining columns that
+  are unused. The other key difference is that if a dynamic value is used
+  in the max (1fr in this example), the min is used and any remaining space
+  is shared equally among the columns (min + remainder)*/
+  grid-template: 100px 100px 100px / repeat(auto-fit, minmax(100px, 1fr));
+}
