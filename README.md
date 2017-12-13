@@ -43,3 +43,9 @@ Finished up the section on repeat functions as well as implementing minmax()
 ### Thoughts:
 I continue to be very interested in CSS Grid. As these
 techniques become more clear, I am able to visualize how awesome it truly will be to start using it in my projects. I hope to put more time into the lectures tomorrow so I can finish up the course by 12/13/2017
+
+## Day 8: December 12, 2017
+### What I did:
+Completed two separate exercises that aim to reinforce grid areas and the repeat function.
+### Thoughts:
+This is starting to gel with me more and it is very exciting. I am anxious to build something using grid. Gotta finish the course first!
