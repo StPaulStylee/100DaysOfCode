@@ -49,3 +49,9 @@ techniques become more clear, I am able to visualize how awesome it truly will b
 Completed two separate exercises that aim to reinforce grid areas and the repeat function.
 ### Thoughts:
 This is starting to gel with me more and it is very exciting. I am anxious to build something using grid. Gotta finish the course first!
+
+## Day 9: December 13, 2017
+### What I did:
+I completed a couple of exercises on auto-fill and auto-fit.
+### Thoughts:
+I am very frustrated right now because my learning resource is having technical issues in that all of my content is locked. I was ready to really dig in tonight and now I can't actually access the lectures. So yeah, that sucks.
