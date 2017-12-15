@@ -1,0 +1,45 @@
+.container {
+  border: 1px solid black;
+  height: 600px
+}
+.grid {
+  border: 1px solid black;
+  color: white;
+  display: grid;
+  height: 400px;
+  grid-gap: 10px;
+  grid-template: 100px 100px / repeat(3, 200px);
+}
+
+.grid > * {
+  background: purple;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid div:first-child {
+  justify-self: center;
+  align-self: center;
+}
+
+.grid div:nth-child(2) {
+  justify-self: end;
+}
+
+.grid div:nth-child(3) {
+  align-self: center;
+}
+
+.grid div:nth-child(4) {
+  justify-self: end;
+  align-self: start;
+}
+
+.grid div:nth-child(5) {
+  justify-self: center;
+  align-self: end;
+}
+
+.grid div:last-child {
+  justify-self: center;
+}

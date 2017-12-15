@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid black;
+  height: 600px
+}
+.grid {
+  border: 1px solid black;
+  color: white;
+  display: grid;
+  height: 400px;
+  grid-gap: 10px;
+  grid-template: 100px 100px / repeat(3, 200px);
+  justify-items: end;
+  align-items: center;
+}
+
+.grid > * {
+  background: purple;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+.grid {
+  border: 1px solid white;
+  display: grid;
+  grid-gap: 10px;
+  grid-template: 150px 150px / 200px 200px 200px;
+  padding: 10px;
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid div:first-child {
+  justify-self: start;
+}
+
+.grid div:nth-child(2) {
+  justify-self: end;
+  align-self: end;
+}
+
+.grid div:nth-child(3) {
+  justify-self: center;
+  align-self: center;
+}
