@@ -55,3 +55,9 @@ This is starting to gel with me more and it is very exciting. I am anxious to bu
 I completed a couple of exercises on auto-fill and auto-fit.
 ### Thoughts:
 I am very frustrated right now because my learning resource is having technical issues in that all of my content is locked. I was ready to really dig in tonight and now I can't actually access the lectures. So yeah, that sucks.
+
+## Day 10: December 14, 2017
+### What I did:
+I completed lectures on justify- and align- as well as completed exercises that reinforced the lectures.
+### Thoughts:
+This stuff is really cool and super simple. I am sure there are some advanced techniques but out of the box, this shit is powerful and simple. I imagine this is going to be a huge thing for html gaming.
