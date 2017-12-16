@@ -61,3 +61,9 @@ I am very frustrated right now because my learning resource is having technical 
 I completed lectures on justify- and align- as well as completed exercises that reinforced the lectures.
 ### Thoughts:
 This stuff is really cool and super simple. I am sure there are some advanced techniques but out of the box, this shit is powerful and simple. I imagine this is going to be a huge thing for html gaming.
+
+## Day 11: December 15, 2017
+### What I did:
+I once again had problems with Mapt and couldn't access the content for the grid course. I decided to just start rebuilding the MN Tech site using CSS grid. I then ran into troubles with Node which caused me to have to completely reinstall. So basically, I did nothing but get the file structure laid out for the rebuild.
+### Thoughts:
+Annoyed and frustrated. Mapt is pissing me off.
