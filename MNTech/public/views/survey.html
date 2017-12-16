@@ -1,0 +1,100 @@
+  <div class="section-header">
+    <h2 class="quote-header header">BNA Survey</h2>
+  </div>
+  <div class="survey-container">
+    <form class="survey-form" ng-model="survey">
+      <div class="input-container goals-container">
+        <label class="goals-label" for="goals">
+          What are the main goals the website should fulfill?
+          (Ex. The website should elevate the mission by acting
+          as a resource to learn more about the community and community issues,
+          making it easy to get involved through an event or meeting
+          and offering opportunities for stakeholders to weigh in.)</label>
+        <textarea class="goals-input" name="goals" ng-model="survey.goals" >
+        </textarea>
+      </div>
+      <div class="input-container visiterRank-container">
+        <label class="visiter-label" for="visiterRank">
+          Rank the following options top to bottom (drag them drop them)
+          in order of who you think will visit the site the most and why.
+          (*We’ll focus on all of these stakeholders,
+           but ranking them helps us develop the user
+           experience on the website!) </label>
+        <ul data-as-sortable ng-model="survey.visiterList">
+              <li ng-repeat="visiter in survey.visiterList" data-as-sortable-item>
+                  <div data-as-sortable-item-handle>
+                      {{visiter}}
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <div class="input-container email-container">
+        <label class="email-label" for="email">
+          Name three websites you love to use and why.
+          (*Ex. website.com - I get the information I need fast,
+           they offer fun interactive elements and  the design is beautiful)
+        </label>
+        <textarea class="website-input" name="website" ng-model="survey.website" >
+        </textarea>
+      </div>
+      <div class="input-container webMove-container">
+        <label class="webMove-label" for="webMove">
+          Check the boxes below of the current site pages you would like moved over to the new site.
+          (Could be all, could be none but this gets our content firmed up!)
+        </label>
+        <h1><input class="webMove-input" type="checkbox" name="Home" value="Home" ng-model="survey.home" />
+          Home<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="About BNA" value="About BNA" ng-model="survey.aboutBNA" />
+          About BNA<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Bancroft Neighborhood History" value="Bancroft Neighborhood History" ng-model="survey.history" />
+          Bancroft Neighborhood History"<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Meet Our Board" value="Meet Our Board" ng-model="survey.meetOurBoard" />
+          Meet Our Board<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Mission" value="Mission" ng-model="survey.mission" />
+          Mission<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Meeting Minutes" value="Meeting Minutes" ng-model="survey.meetingMinutes" />
+          Meeting Minutes<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Take A Tour" value="Take A Tour" ng-model="survey.takeATour" />
+          Take A Tour<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Volunteer" value="Volunteer" ng-model="survey.volunteer" />
+          Volunteer<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Block Clubs" value="Block Clubs" ng-model="survey.blockClubs" />
+          Block Clubs<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="BNA Committees" value="BNA Committees" ng-model="survey.bnaCommittees" />
+          BNA Committees<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="In The Neighborhood" value="In The Neighborhood" ng-model="survey.inTheNeighborhood" />
+          In The Neighborhood<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Resources and Forms" value="Resources and Forms" ng-model="survey.resourcesAndForms" />
+          Resources and Forms<br /></h1>
+        <h1><input class="webMove-input" type="checkbox" name="Commercial Improvement" value="Commercial Improvement" ng-model="survey.commercialImprovement" />
+          Commercial Improvement<br /></h1>
+      </div>
+
+      <div class="input-container webMove-container">
+        <label class="webMove-label" for="phone">
+          Check the boxes below of the new site pages/features you would like implemented on the new site.<br />
+           (This section helps develop new content for your website.)
+        </label>
+        <h2><input class="newPages-input" type="checkbox" name="Surveys/Polling" value="Surveys/Polling" ng-model="survey.surveysPolling" />
+          Surveys/Polling (Ability to create, promote and report on surveys or polls from your site)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Event Management System" value="Event Management System" ng-model="survey.eventManagementSystem" />
+          Event Management System (Promote events on your site. Send invitations, collect RSVPS, and organize tasks)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Forms for programs" value="Forms for programs" ng-model="survey.formsForPrograms" />
+          Forms for programs (Stakeholders can complete program applications online)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Appointment Booking" value="Appointment Booking" ng-model="survey.appointmentBooking" />
+          Appointment Booking (Users can schedule an appointment on your website)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Store" value="Store" ng-model="survey.store" />
+          Store (Selling BNA merchandise / Offering online payments for BNA registrations etc when applicable)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Expanded Business Directory" value="Expanded Business Directory" ng-model="survey.expandedBusinessDirectory" />
+          Expanded Business Directory (Interactive and searchable Business Directory)<br /></h2>
+        <h2><input class="newPages-input" type="checkbox" name="Live Chat" value="Live Chat" ng-model="survey.LiveChat" />
+          Live Chat (Users can chat with a BNA representative on your website)<br /></h2>
+
+        <label class="other-label" for="other">
+          Other (We want to make your wildest dreams come true!  Put them here.)</label>
+        <textarea class="other-input" name="other" ng-model="survey.other"></textarea>
+      <div class="input-container submit-button">
+        <input type="submit" ng-click="survey.sendSurveyData(survey)"/>
+      </div>
+    </form>
+  </div>

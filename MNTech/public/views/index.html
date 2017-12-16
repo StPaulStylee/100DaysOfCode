@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="mnTechSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>MN Tech</title>
+
+    <!-- Stylesheets and Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/vendors/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="/vendors/ng-sortable.min.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
+
+    <!-- Vendors -->
+    <script src="/assets/vendors/angular.min.js"></script>
+    <script src="/assets/vendors/angular-route.min.js"></script>
+    <script src="/assets/vendors/angular-animate.min.js"></script>
+    <script src="/assets/vendors/ng-sortable.min.js"></script>
+    <!-- Angular Setup -->
+    <script src="/scripts/app.module.js"></script>
+    <script src="/scripts/app.config.js"></script>
+    <!-- Controllers -->
+    <script src="/scripts/controllers/base.controller.js"></script>
+    <script src='/scripts/controllers/landing.controller.js'></script>
+    <script src="/scripts/controllers/services.controller.js"></script>
+    <script src="/scripts/controllers/join.controller.js"></script>
+    <script src="/scripts/controllers/blog.controller.js"></script>
+    <script src="/scripts/controllers/home.controller.js"></script>
+    <script src="/scripts/controllers/about.controller.js"></script>
+    <script src="/scripts/controllers/bylaws.controller.js"></script>
+    <script src="/scripts/controllers/survey.controller.js"></script>
+
+    <!-- Services -->
+    <script src="/scripts/services/email.service.js"></script>
+    <script src="/scripts/services/style.service.js"></script>
+
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1' /> -->
+
+    <base href="/" />
+  </head>
+  <body>
+    <div class="test" ng-controller="BaseController as base">
+
+    <header class="global-navbar" ng-class="{open: base.isOpen}">
+      <div class="logo-container-global">
+        <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech. It consists
+                  of the geographical shape of minnesota, painted vibrant green, the the text MN Tech
+                  coop inside of it" title="The MN Tech Logo" />
+      </div>
+      <nav>
+        <a ng-class="{home: base.isActive.home}" class href="/home" ng-click="base.setActive('home')"><span class="nav-link">Home</span></a
+        ><a ng-class="{about: base.isActive.about}" class href="/about" ng-click="base.setActive('about')"><span class="nav-link">About</span></a
+        ><a ng-class="{services: base.isActive.services}" class href="/services" ng-click="base.setActive('services')"><span class="nav-link">Services</span></a
+        ><a ng-class="{join: base.isActive.join}" href="/join" class ng-click="base.setActive('join')"><span class="nav-link">Join</span></a>
+        <!-- <a href="/blog"><span class="nav-link">Blog</span></a> -->
+      </nav>
+    </header>
+    <div class="hamburger-container">
+      <div class="nav-hamburger" ng-class="{open: base.isOpen}" ng-click="base.setOpen()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+    <ng-view>
+
+    </ng-view>
+    <footer class="global-footer">
+      <div class="footer-content-container">
+        <span class="contact-us">Contact Us / </span>
+        <span><a class="contact-email" href="mailto:mntechcoop@gmail.com">mntechcoop@gmail.com</a> / </span>
+        <span class="copyright">&copy; 2017 Minnesota Tech LLC</span>
+      </div>
+    </footer>
+  </body>
+</html>

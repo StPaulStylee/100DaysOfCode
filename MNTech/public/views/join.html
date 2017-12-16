@@ -1,0 +1,84 @@
+<div id="general-page">
+
+
+<main class="join-content">
+  <section class="page-header join-header" ng-class="{focused: join.isFocused}" ng-click="join.setFocus(false)">
+    <div class="content-container">
+      <h1 class="header-title">Become a Member</h1>
+      <p class="header-content">Tired of the freelance grind? MN Tech is a great place to receive mentorship, build
+                your skillset, get more clients, and make more money. Tell us about yourself and
+                don't be shy! Freelancers Unite!
+      </p>
+    </div>
+  </section>
+
+  <section class="join-section left-side" ng-click="join.setFocus(false)">
+    <h2 class="join-section-header header">Member Benefits</h2>
+    <ul class="join-list list">
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">More Clients</h6>
+        <p class="list-content">Working as a freelancer is hard work, and find clients
+                  is even harder. Joining our cooperative gives you a known and trusted
+                  name to work behind. Make landing and retaining clients simple and easy.
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">Doing Good in MN</h6>
+        <p class="list-content">There are countless small businesses and nonprofits in our
+                  great state. We provide them tech that would otherwise be out of their
+                  reach. Get paid to do good!
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">More Members == More Skills</h6>
+        <p class="list-content">Many of our members are self taught or come from non-traditional education
+                  backgrounds. We know what it is like to be just getting started. That's why we emphasize
+                  mentorship and support to help you become them best you can be. Tech veteran? Well then,
+                  as you know, there is always more to learn!
+        </p>
+      </li>
+      <li class="join-item list-item">
+        <h6 class="join-item-header list-header">You're an Owner</h6>
+        <p class="list-content">MN Tech Coop functions like a workers cooperative. Every member is
+          and owner and receives an equal share of the profits.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="join-us-section right-side" ng-class="{focused: join.isFocused}">
+    <div class="section-header">
+      <h2 class="join-us-header header">Become A Member</h2>
+    </div>
+    <form class="request-form" ng-submit="join.sendMemberData(join)" ng-model="join">
+      <div class="input-container name-container">
+        <label class="name-label" for="name">Name</label>
+        <input class="name-input" type="text" name="name" ng-model="join.name" ng-focus="join.setFocus(true)" required/>
+      </div>
+      <div class="input-container address-container">
+        <label class="address-label" for="address">Address</label>
+        <input class="address-input" type="text" name="address" ng-model="join.address" ng-focus="join.setFocus(true)" />
+      </div>
+      <div class="input-container email-container">
+        <label class="email-label" for="email">Email</label>
+        <input class="email-input" type="email" name="email" ng-model="join.email" ng-focus="join.setFocus(true)" required/>
+      </div>
+      <div class="input-container phone-container">
+        <label class="phone-label" for="phone">Phone</label>
+        <input class="phone-input" type="tel" name="phone" ng-model="join.phone" ng-focus="join.setFocus(true)" />
+      </div>
+      <div class="input-container sample-container">
+        <label class="sample-label" for="sample">Website/Blog/Portfolio</label>
+        <input class="sample-input" type="text" name="sample" ng-model="join.sample" ng-focus="join.setFocus(true)" required />
+      </div>
+      <div class="input-container info-container">
+        <label class="info-label" for="info">Tell us about yourself</label>
+        <textarea class="info-input" name="info" ng-model="join.info" ng-focus="join.setFocus(true)" required ></textarea>
+      </div>
+      <div class="input-container submit-button">
+        <input type="submit" ng-show="join.isFocused" value="Submit" />
+      </div>
+    </form>
+  </section>
+</main>
+</div>

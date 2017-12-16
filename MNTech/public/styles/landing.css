@@ -1,0 +1,7 @@
+.landing-page-wrap {
+  display: grid;
+}
+
+.navigate-text, .navigate-text .large {
+  display: block;
+}
