@@ -67,3 +67,9 @@ This stuff is really cool and super simple. I am sure there are some advanced te
 I once again had problems with Mapt and couldn't access the content for the grid course. I decided to just start rebuilding the MN Tech site using CSS grid. I then ran into troubles with Node which caused me to have to completely reinstall. So basically, I did nothing but get the file structure laid out for the rebuild.
 ### Thoughts:
 Annoyed and frustrated. Mapt is pissing me off.
+
+## Day 12: December 16th, 2017
+### What I did:
+I continued with the CSS Grid course once I was able to access the content again, but as you could have guessed, I ran into another problem. There was missing content... I am nearly finished and am in the advanced chapter, but none of the content is acutally there. I then switched over to the rebuild of the MN Tech site with css grid.
+### Thoughts:
+It's not as easy as I would have hoped, but I am confident I will start to get into the swing of things as I continue the build. I am unsure where I need to use traditional css techniques and where I can use grid... also, what kind of html architecture is necessary to get the most of grid? Hopefully I can get some answers when I get access to the missing content... If I don't get an answer by Monday, I am switching to a different content provider.
