@@ -23,14 +23,17 @@ time, mark, audio, video {
 	text-decoration: none;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 	cursor: move; /* fallback if grab cursor is unsupported */
@@ -51,14 +54,17 @@ ol:active,ul:active {
 	 cursor: -moz-grabbing;
 	 cursor: -webkit-grabbing;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -74,7 +80,6 @@ html {
 input[type="checkbox"] {
   transform:scale(1.5, 1.5);
 }
-
 
 /*--------------------------------------------------------------------------------------------
 Colors
@@ -94,10 +99,7 @@ Globals
 ---------------------------------------------------------------------------------------------*/
 body {
 	font-size: 62.5%;
-}
-
-main {
-	position: relative;
+	height: 100vh;
 }
 
 input:focus,
@@ -107,102 +109,16 @@ button:focus {
     outline: var(--vibrant-green) auto 5px;
 }
 
-textarea {
-	border-color: rgb(212, 212, 212);
-
-}
-
-label {
-	display: inline-block;
-}
-
 #general-page {
 	position: fixed;
 	min-height: 100vh;
 	min-width: 100vw;
 }
 
-.global-navbar {
-	background-color: var(--white);
-	height: 16vh;
-	position: relative;
-	width: 100vw;
-}
-
-.global-navbar nav {
-	bottom: 0;
-	float: right;
-	margin: 3em;
-	padding: 2em;
-	position: absolute;
-	right: 0;
-	width: 45vw;
-}
-
-.global-navbar nav a {
-	border-bottom: solid 2px var(--navy);
-	padding: 0 4em 2em 4em;
-	transition: 0.25s ease-in;
-}
-
-.global-navbar nav a:first-child {
-	padding: 0 4em 2em 3em;
-}
-
-.global-navbar nav a:last-child {
-	padding: 0 3em 2em 4em;
-}
-
-.global-navbar nav a:hover,
-.global-navbar nav a:focus,
-.global-navbar nav a:active
-.global-navbar nav a:visited,
-.global-navbar nav a.home,
-.global-navbar nav a.about,
-.global-navbar nav a.services,
-.global-navbar nav a.join {
-	border-bottom: solid 2px var(--vibrant-green);
-}
-
-.nav-link {
-	color: var(--dark-grey);
-	font-size: 1.75em;
-	text-transform: uppercase;
-}
-
-.logo-container-global {
-	margin-left: 4em;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 13em;
-}
-
-.logo-container-global img {
-	height: 100%;
-	width: 100%;
-}
-
 .page-header {
 	background-color: var(--slate-grey);
 	height: 30vh;
-	position: relative;
 	text-align: center;
-	transition: 0.25s linear all;
-	width: 100vw;
-}
-
-.page-header.focused {
-	transition: 0.25s linear all;
-	width: 40vw;
-}
-
-.page-header .content-container {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
 }
 
 h1.header-title {
@@ -210,108 +126,41 @@ h1.header-title {
 	text-transform: uppercase;
 }
 
-.page-header .header-title {
-	font-size: 6em;
-}
-
-.page-header.focused .header-title {
-	font-size: 6em;
-}
-
 .page-header .header-content {
 	color: var(--white);
-	font-size: 2em;
 	font-weight: 300;
 	letter-spacing: 0.5px;
 	line-height: 1.25;
-	margin: 0 auto;
-	padding-top: 10px;
-	width: 50%;
-}
-
-.page-header.focused .header-content {
-	font-size: 1.88em;
-	width: 80%;
 }
 
 .left-side {
 	background-color: var(--cloud-grey);
 	color: var(--navy);
-	float: left;
-	height: 51vh;
-	margin-bottom: 1em;
-	overflow: auto;
-	padding: 1.5em 3em;
-	position: relative;
-	width: 40vw;
 }
 
 .header {
-	font-size: 2.6em;
 	font-weight: 600;
-	margin-bottom: 10px;
-	text-align: left;
 	text-transform: uppercase;
-}
-
-.list-item {
-	display: inline-block;
-	padding-bottom: 1.75em;
-}
-
-.right-side {
-	overflow: auto;
 }
 
 .request-form, textarea {
 	color: var(--navy);
-	font-family: 'Montserrat', sans-serif;
-}
-
-.right-side.focused {
-	height: 84vh;
-	transform: translateY(-30vh);
-	transition: 0.25s linear all;
 }
 
 .request-form label {
-	font-size: 1.6em;
-	padding-bottom: 5px;
 	text-transform: uppercase;
 }
 
 .request-form input, .request-form textarea {
 	color: var(--dark-grey);
-	font-size: 2em;
-	padding: 5px;
-	width: 100%;
 }
-
-.input-container {
-	margin: 0 1em 1.5em 0em;
-}
-
-.in-progress {
-	font-size: 2em;
-	padding: 4em;
-	text-align: center;
-}
-
-.back-container {
-	font-size: 1.4em;
-	padding: 1em;
-	text-align: center;
-	width: 100%;
-}
-
 
 /*--------------------------------------------------------------------------------------------
 Fonts
 ---------------------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6, span, p, input[type="submit"] {
+h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
   font-family: 'Montserrat', sans-serif;
-
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -319,7 +168,6 @@ Buttons
 ---------------------------------------------------------------------------------------------*/
 .request-form input[type="submit"] {
 	border: none;
-	height: 3.35em;
 	text-transform: uppercase;
 	transition: 0.25s ease-in all;
 }
@@ -335,73 +183,6 @@ Buttons
 	color: var(--vibrant-green);
 	cursor: pointer;
 }
-
-
-
-/*--------------------------------------------------------------------------------------------
-Landing Page
----------------------------------------------------------------------------------------------*/
-#landing-page {
-  background-color: var(--slate-grey);
-	left: 0;
-	min-height: 100vh;
-	min-width: 100vw;
-	position: absolute;
-	top: 0;
-	z-index: 1;
-}
-
-.logo-container-landing {
-	margin: 3em auto 1em;
-	width: 15%;
-}
-
-.logo-container-landing img {
-	margin-left: 1em;
-	max-height: 100%;
-	max-width: 100%;
-	padding: 5em 0 2em 0;
-}
-
-.navigate-container {
-	line-height: 1.2;
-	width: 100%;
-}
-
-.navigate-container-left, .navigate-container-right {
-	display: inline-block;
-	height: 55vh;
-	padding-top: 2em;
-	width: 50%;
-}
-
-.navigate-container-left {
-	border-right: 1px solid var(--vibrant-green);
-	float: left;
-	padding-right: 7em;
-	text-align: right;
-}
-
-.navigate-container-right {
-	border-left: 1px solid var(--vibrant-green);
-	padding-left: 7em;
-}
-
-.navigate-text {
-	color: var(--vibrant-green);
-	font-family: 'Montserrat', sans-serif;
-	font-size: 8em;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
-.navigate-text.large {
-	font-size: 12em;
-}
-.nav-hamburger {
-	display: none;
-}
-
 
 /*--------------------------------------------------------------------------------------------
 Home Page

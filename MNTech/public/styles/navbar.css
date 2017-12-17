@@ -1,0 +1,60 @@
+.global-navbar {
+	background-color: var(--white);
+	height: 16vh;
+	position: relative;
+	width: 100vw;
+}
+
+.global-navbar nav {
+	bottom: 0;
+	float: right;
+	margin: 3em;
+	padding: 2em;
+	position: absolute;
+	right: 0;
+	width: 45vw;
+}
+
+.global-navbar nav a {
+	border-bottom: solid 2px var(--navy);
+	padding: 0 4em 2em 4em;
+	transition: 0.25s ease-in;
+}
+
+.global-navbar nav a:first-child {
+	padding: 0 4em 2em 3em;
+}
+
+.global-navbar nav a:last-child {
+	padding: 0 3em 2em 4em;
+}
+
+.global-navbar nav a:hover,
+.global-navbar nav a:focus,
+.global-navbar nav a:active
+.global-navbar nav a:visited,
+.global-navbar nav a.home,
+.global-navbar nav a.about,
+.global-navbar nav a.services,
+.global-navbar nav a.join {
+	border-bottom: solid 2px var(--vibrant-green);
+}
+
+.nav-link {
+	color: var(--dark-grey);
+	font-size: 1.75em;
+	text-transform: uppercase;
+}
+
+.logo-container-global {
+	margin-left: 4em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 13em;
+}
+
+.logo-container-global img {
+	height: 100%;
+	width: 100%;
+}

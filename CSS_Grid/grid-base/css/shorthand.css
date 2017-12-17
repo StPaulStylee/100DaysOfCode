@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  /* For below:
+  grid-template-columns: none(default)
+  grid-auto-columns: 150px;
+  grid-auto-flow: column *
+  grid-template-rows: 150px 150px
+  grid-auto-rows: default (auto) */
+  grid: 150px 150px / auto-flow 1fr;
+  /* When using the 'grid' shorthand grid-gap must be placed
+  after it in order for it to compile correctly */
+  grid-gap: 10px;
+}
+
+.grid div:nth-child(2) {
+  grid-column: 1 / span 3;
+}
