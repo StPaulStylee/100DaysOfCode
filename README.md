@@ -70,6 +70,18 @@ Annoyed and frustrated. Mapt is pissing me off.
 
 ## Day 12: December 16th, 2017
 ### What I did:
-I continued with the CSS Grid course once I was able to access the content again, but as you could have guessed, I ran into another problem. There was missing content... I am nearly finished and am in the advanced chapter, but none of the content is acutally there. I then switched over to the rebuild of the MN Tech site with css grid.
+I continued with the CSS Grid course once I was able to access the content again, but as you could have guessed, I ran into another problem. There was missing content... I am nearly finished and am in the advanced chapter, but none of the content is actually there. I then switched over to the rebuild of the MN Tech site with css grid.
 ### Thoughts:
 It's not as easy as I would have hoped, but I am confident I will start to get into the swing of things as I continue the build. I am unsure where I need to use traditional css techniques and where I can use grid... also, what kind of html architecture is necessary to get the most of grid? Hopefully I can get some answers when I get access to the missing content... If I don't get an answer by Monday, I am switching to a different content provider.
+
+## Day 13: December 17, 2017
+### What I did:
+I didn't work at all today :(
+### Thoughts:
+It was a super busy Sunday and I just didn't find the time to sit down and work.
+
+## Day 14: December 18, 2017
+### What I did:
+Well, my CSS Grid resource still is broken so I decided to try and just work on the site rebuild.
+### Thoughts:
+It didn't go very well... I am unsure how to target individual items within a grid element... I feel like I am missing something very obvious but a lot of the resources I found are very basic. I will continue to try and problem solve this but I have reached my hour limit for the night... I am frustrated.
