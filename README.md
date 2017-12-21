@@ -91,3 +91,9 @@ It didn't go very well... I am unsure how to target individual items within a gr
 I started a new course on Lynda to learn about CSS Grids.
 ### Thoughts:
 Well, today I had to go backwards to move forwards and I am glad I did. I switch my learning resource to a Lynda course and I can already tell it is A LOT better. I was able to skip through the entry content and go right to the more advanced techniques, so that is exciting. I also now understand how named lines work, so that is awesome. I am very happy and feeling confident that I can cruise through what remains in this course and then really get down and dirty with grid when I rebuild the MNTech site.
+
+## Day 16: December 20, 2017
+### What I did:
+I worked through nested grids while learning some other cool techniques such as ACTUALLY applying mobile first design and using the support function
+### Thoughts:
+I am so happy I switched learning resources... It is night and day. I will finish this course by Saturday and THEN REALLY start rebuilding the MN Tech site. 
