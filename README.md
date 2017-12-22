@@ -96,4 +96,10 @@ Well, today I had to go backwards to move forwards and I am glad I did. I switch
 ### What I did:
 I worked through nested grids while learning some other cool techniques such as ACTUALLY applying mobile first design and using the support function
 ### Thoughts:
-I am so happy I switched learning resources... It is night and day. I will finish this course by Saturday and THEN REALLY start rebuilding the MN Tech site. 
+I am so happy I switched learning resources... It is night and day. I will finish this course by Saturday and THEN REALLY start rebuilding the MN Tech site.
+
+## Day 17: December 21, 2017
+### What I did:
+I worked on component based CSS Grid - building cards that can be placed within an HTML Document.
+### Thoughts:
+Hell yes, this is awesome. 
