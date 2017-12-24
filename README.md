@@ -102,4 +102,16 @@ I am so happy I switched learning resources... It is night and day. I will finis
 ### What I did:
 I worked on component based CSS Grid - building cards that can be placed within an HTML Document.
 ### Thoughts:
-Hell yes, this is awesome. 
+Hell yes, this is awesome.
+
+## Day 18: December 22, 2017
+### What I did:
+I did not make any commits today
+### Thoughts:
+I spent the night with my wife and son and decided not to work at all.
+
+## Day 19: December 23, 2017
+### What I did:
+I did a little bit of work with my Grid course tonight. I took my "component" grid cards and placed them inside a more "all-encompassing" grid
+### Thoughts:
+Another night where I did very little. The holidays are busy and its tough. 
