@@ -221,7 +221,10 @@ CSS Grid layout for wider screens, when browser supports grid:
 		.cards {
 			grid-template-columns: repeat(4, 1fr);
 		}
-
+		.double {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
 	}
 
 }
