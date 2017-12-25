@@ -114,4 +114,10 @@ I spent the night with my wife and son and decided not to work at all.
 ### What I did:
 I did a little bit of work with my Grid course tonight. I took my "component" grid cards and placed them inside a more "all-encompassing" grid
 ### Thoughts:
-Another night where I did very little. The holidays are busy and its tough. 
+Another night where I did very little. The holidays are busy and its tough.
+
+## Day 20: December 20, 2017
+### What I did:
+I did only a little bit tonight... it is Christmas Eve after all. I worked with stacking items inside a single grid cell as well as using flex box to compliement grid.
+### Thoughts:
+These nights of a short amount of work are not ideal because I feel like I am not really getting a chance to digest what I am learning. This just makes it all more important to build something once I finish the course.
