@@ -116,8 +116,14 @@ I did a little bit of work with my Grid course tonight. I took my "component" gr
 ### Thoughts:
 Another night where I did very little. The holidays are busy and its tough.
 
-## Day 20: December 20, 2017
+## Day 20: December 24, 2017
 ### What I did:
 I did only a little bit tonight... it is Christmas Eve after all. I worked with stacking items inside a single grid cell as well as using flex box to compliement grid.
 ### Thoughts:
 These nights of a short amount of work are not ideal because I feel like I am not really getting a chance to digest what I am learning. This just makes it all more important to build something once I finish the course.
+
+## Day 21: December 25, 2017
+### What I did:
+Created a 'magazine' style layout and then workings on a accessible toggle menu
+### Thoughts:
+There were a few things that came up through the exercises that kind of through me off. They weren't things that had to do with grid properties but traditional CSS and pairing it up with Grid. I suppose the understanding will come with experience.
