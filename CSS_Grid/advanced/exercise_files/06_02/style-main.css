@@ -294,6 +294,50 @@ CSS Grid layout for wider screens, when browser supports grid:
 
 	@media screen and (min-width: 27em) {
 
+		.site {
+			display: grid;
+			grid-template-areas:
+				"header"
+				"main"
+				"sidebar"
+				"footer";
+		}
+		.masterhead {
+			grid-area: header;
+		}
+		.main-area {
+			grid-area: main;
+		}
+		.sidebar {
+			grid-area: sidebar;
+		}
+		.colophon {
+			grid-area: footer;
+		}
+		.main-nav {
+			position: relative;
+			grid-column: 1;
+			grid-row: 1/5;
+			width: 12em;
+			left: -13em;
+		}
+		.main-nav ul {
+			flex-direction: column;
+		}
+		.reveal .main-nav {
+			left: 0;
+		}
+
+		.trigger {
+			display: block;
+			position: fixed;
+			top: 1.5em;
+			left: .2em;
+		}
+		.reveal .trigger {
+			left: 14.5em;
+		}
+
 		.cards {
 			margin: 0 auto;
 			padding: 1em;
@@ -337,6 +381,16 @@ CSS Grid layout for wider screens, when browser supports grid:
 			display: block;
 		}
 
+	}
+
+	@media screen and (min-width: 78em) {
+		.site {
+			grid-template-columns: auto 15em;
+			grid-template-areas:
+				"header header"
+				"main sidebar"
+				"footer footer";
+		}
 	}
 
 }
