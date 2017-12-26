@@ -127,3 +127,9 @@ These nights of a short amount of work are not ideal because I feel like I am no
 Created a 'magazine' style layout and then workings on a accessible toggle menu
 ### Thoughts:
 There were a few things that came up through the exercises that kind of through me off. They weren't things that had to do with grid properties but traditional CSS and pairing it up with Grid. I suppose the understanding will come with experience.
+
+## Day 22: December 26, 2017
+### What I did:
+Implemented 2 version of scrolling sidebar nav... AND FINISHED THE COURSE!
+### Thoughts:
+Super cool and very excited to be done with the lecture part of this... It took 3 weeks but it was worth it. Now, my goal is to have the MN Tech site bebuilt with Grid by this time next week (Tuesday).
