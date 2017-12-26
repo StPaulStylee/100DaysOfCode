@@ -295,12 +295,21 @@ CSS Grid layout for wider screens, when browser supports grid:
 	@media screen and (min-width: 27em) {
 
 		.site {
+			position: relative;
+			left: -14em;
 			display: grid;
+			grid-template-columns: 15em calc(100% - 1em);
 			grid-template-areas:
-				"header"
-				"main"
-				"sidebar"
-				"footer";
+				"nav header"
+				"nav main"
+				"nav sidebar"
+				"nav footer";
+			overflow-x: hidden;
+			transition: left .6s;
+		}
+
+		.reveal {
+			left: 0;
 		}
 
 		.masthead {
@@ -320,15 +329,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 		}
 
 		.main-nav {
-			position: relative;
-			width: 12em;
-			left: -13em;
-			grid-column: 1;
-			grid-row: 1/5;
-		}
-
-		.reveal .main-nav {
-			left: 0;
+			grid-area: nav;
 		}
 
 		.main-nav ul {
@@ -337,7 +338,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 			flex-direction: column;
 		}
 
-		.reveal .main-nav ul {
+		.open ul {
 			display: flex;
 		}
 
@@ -345,14 +346,13 @@ CSS Grid layout for wider screens, when browser supports grid:
 			position: fixed;
 			display: block;
 			top: 1.5em;
-			left: .2em;
+			left: .1em;
+			transition: left .6s;
 		}
 
 		.reveal .trigger {
-			left: 14.5em;
+			left: 14em;
 		}
-
-
 		.cards {
 			margin: 0 auto;
 			padding: 1em;
@@ -401,11 +401,11 @@ CSS Grid layout for wider screens, when browser supports grid:
 	@media screen and (min-width: 78em) {
 
 		.site {
-			grid-template-columns: auto 15em;
+			grid-template-columns: 15em calc(100% - 16em) 15em;
 			grid-template-areas:
-				"header header"
-				"main sidebar"
-				"footer footer";
+				"nav header header"
+				"nav main sidebar"
+				"nav footer footer";
 		}
 	}
 
