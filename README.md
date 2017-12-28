@@ -133,3 +133,9 @@ There were a few things that came up through the exercises that kind of through 
 Implemented 2 version of scrolling sidebar nav... AND FINISHED THE COURSE!
 ### Thoughts:
 Super cool and very excited to be done with the lecture part of this... It took 3 weeks but it was worth it. Now, my goal is to have the MN Tech site bebuilt with Grid by this time next week (Tuesday).
+
+## Day 23: December 27, 2017
+### What I did:
+Began the rewrite of the MNTEch site using Grid. I began building the navigation.
+### Thoughts:
+This is a lot tougher when  you're doing it on your own. I really didn't get much done, but I am applying and that is what is really going to help me actually learn this stuff. I'm excited to get back at it tomorrow.

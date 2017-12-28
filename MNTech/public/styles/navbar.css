@@ -29,6 +29,7 @@
 	section.navigation nav {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		/*Try a grid-template-area?*/
 	}
 
 	.global-navbar nav a {
