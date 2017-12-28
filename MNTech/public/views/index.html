@@ -10,8 +10,8 @@
     <!--<link rel="stylesheet" href="/vendors/bootstrap.min.css" />-->
     <link rel="stylesheet" href="/vendors/ng-sortable.min.css" />
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/landing.css" />
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/landing.css" />
 
     <!-- Vendors -->
     <script src="/assets/vendors/angular.min.js"></script>
@@ -42,29 +42,30 @@
   </head>
   <body>
     <div class="test" ng-controller="BaseController as base">
-
-    <header class="global-navbar" ng-class="{open: base.isOpen}">
-      <div class="logo-container-global">
-        <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech. It consists
-                  of the geographical shape of minnesota, painted vibrant green, the the text MN Tech
-                  coop inside of it" title="The MN Tech Logo" />
+      <header class="global-navbar" ng-class="{open: base.isOpen}">
+        <section class="mntech-logo">
+          <figure class="logo-image">
+            <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech." title="The MN Tech Logo" />
+          </figure>
+        </section>
+        <section class="navigation">
+          <nav>
+            <a ng-class="{home: base.isActive.home}" class href="/home" ng-click="base.setActive('home')"><span class="nav-link">Home</span></a
+            ><a ng-class="{about: base.isActive.about}" class href="/about" ng-click="base.setActive('about')"><span class="nav-link">About</span></a
+            ><a ng-class="{services: base.isActive.services}" class href="/services" ng-click="base.setActive('services')"><span class="nav-link">Services</span></a
+            ><a ng-class="{join: base.isActive.join}" href="/join" class ng-click="base.setActive('join')"><span class="nav-link">Join</span></a>
+            <!-- <a href="/blog"><span class="nav-link">Blog</span></a> -->
+          </nav>
+        </section>
+      </header>
+      <div class="hamburger-container">
+        <div class="nav-hamburger" ng-class="{open: base.isOpen}" ng-click="base.setOpen()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav>
-        <a ng-class="{home: base.isActive.home}" class href="/home" ng-click="base.setActive('home')"><span class="nav-link">Home</span></a
-        ><a ng-class="{about: base.isActive.about}" class href="/about" ng-click="base.setActive('about')"><span class="nav-link">About</span></a
-        ><a ng-class="{services: base.isActive.services}" class href="/services" ng-click="base.setActive('services')"><span class="nav-link">Services</span></a
-        ><a ng-class="{join: base.isActive.join}" href="/join" class ng-click="base.setActive('join')"><span class="nav-link">Join</span></a>
-        <!-- <a href="/blog"><span class="nav-link">Blog</span></a> -->
-      </nav>
-    </header>
-    <div class="hamburger-container">
-      <div class="nav-hamburger" ng-class="{open: base.isOpen}" ng-click="base.setOpen()">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
   </div>
     <ng-view>
 

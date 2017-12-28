@@ -1,60 +1,58 @@
-.global-navbar {
-	background-color: var(--white);
-	height: 16vh;
-	position: relative;
-	width: 100vw;
-}
+@supports  (grid-area: auto) {
 
-.global-navbar nav {
-	bottom: 0;
-	float: right;
-	margin: 3em;
-	padding: 2em;
-	position: absolute;
-	right: 0;
-	width: 45vw;
-}
+	.global-navbar {
+		background-color: var(--white);
+		display: grid;
+		grid-template-rows: 12rem;
+		grid-template-columns: 25rem auto;
+	}
 
-.global-navbar nav a {
-	border-bottom: solid 2px var(--navy);
-	padding: 0 4em 2em 4em;
-	transition: 0.25s ease-in;
-}
+	section.mntech-logo {
+		margin: 0 auto;
+		width: 12rem;
+	}
 
-.global-navbar nav a:first-child {
-	padding: 0 4em 2em 3em;
-}
+	figure.logo-image {
+		margin: 1em;
+	}
 
-.global-navbar nav a:last-child {
-	padding: 0 3em 2em 4em;
-}
+	.logo-image img {
+		height: 100%;
+		width: 100%;
+	}
 
-.global-navbar nav a:hover,
-.global-navbar nav a:focus,
-.global-navbar nav a:active
-.global-navbar nav a:visited,
-.global-navbar nav a.home,
-.global-navbar nav a.about,
-.global-navbar nav a.services,
-.global-navbar nav a.join {
-	border-bottom: solid 2px var(--vibrant-green);
-}
+	section.navigation {
+		font-size: 1.6rem;
+		text-align: center;
+	}
 
-.nav-link {
-	color: var(--dark-grey);
-	font-size: 1.75em;
-	text-transform: uppercase;
-}
+	section.navigation nav {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
 
-.logo-container-global {
-	margin-left: 4em;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 13em;
-}
+	.global-navbar nav a {
+		border-bottom: solid 2px var(--navy);
+		transition: 0.25s ease-in;
+	}
 
-.logo-container-global img {
-	height: 100%;
-	width: 100%;
+	.global-navbar nav a:hover,
+	.global-navbar nav a:focus,
+	.global-navbar nav a:active
+	.global-navbar nav a:visited,
+	.global-navbar nav a.home,
+	.global-navbar nav a.about,
+	.global-navbar nav a.services,
+	.global-navbar nav a.join {
+		border-bottom: solid 2px var(--vibrant-green);
+	}
+
+	.nav-link {
+		color: var(--dark-grey);
+		text-transform: uppercase;
+	}
+
+	.logo-container-global {
+
+	}
 }
