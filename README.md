@@ -139,3 +139,9 @@ Super cool and very excited to be done with the lecture part of this... It took 
 Began the rewrite of the MNTEch site using Grid. I began building the navigation.
 ### Thoughts:
 This is a lot tougher when  you're doing it on your own. I really didn't get much done, but I am applying and that is what is really going to help me actually learn this stuff. I'm excited to get back at it tomorrow.
+
+## Day 24: December 28, 2017
+### What I did:
+Finished the rewrite of the navbar with css grid
+### Thoughts:
+Feels better to do some CSS grid in real life. It was pretty tough yesterday but even after a couple of days in implementing it, it is coming a little more naturally.
