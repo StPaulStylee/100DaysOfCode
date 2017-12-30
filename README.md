@@ -149,3 +149,10 @@ Feels better to do some CSS grid in real life. It was pretty tough yesterday but
 ## Day 25: December 29, 2017
 ### What I did:
 I didn't do any coding today :( Christmas stuff.
+
+# Day 26: December 30th, 2017
+### What I did:
+I finished writing the navbar and also finished writing the landing page for the MN Tech rewrite.
+### Thoughts:
+CSS Grid wails. Now that I am using it in practice it's intuitiveness is
+really shining. I love it!
