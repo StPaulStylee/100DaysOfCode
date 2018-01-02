@@ -157,6 +157,13 @@ I finished writing the navbar and also finished writing the landing page for the
 CSS Grid wails. Now that I am using it in practice it's intuitiveness is
 really shining. I love it!
 
-#Day 27: December 31, 2017
+# Day 27: December 31, 2017
 ### What I did:
 NOthing. Stewpid holidays! Back on track tomorrow!
+
+# Day 28: January 1, 2018
+### What I did:
+I made a few styling changes to the landing and navbar. Then I got cracking on the home page. I got the grid laid out and I also got the
+page header ready to roll
+### Thoughts:
+This CSS Grid thing kicks ass. That's all there is to say about it.
