@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	/*Custom value for MN Tech*/
+	line-height: 1.25;
 }
 
 ol, ul {
@@ -99,7 +100,6 @@ Globals not included in reset
 ---------------------------------------------------------------------------------------------*/
 html {
 	font-size: 62.5%;
-	/*Test rems*/
 }
 
 img {
@@ -113,6 +113,19 @@ Fonts/Typography
 h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 	color: var(--dark-grey);
   font-family: 'Montserrat', sans-serif;
+}
+
+.header-title {
+	color: var(--vibrant-green);
+	font-size: 6em;
+	text-transform: uppercase;
+}
+
+.header-content {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
 }
 
 /*--------------------------------------------------------------------------------------------

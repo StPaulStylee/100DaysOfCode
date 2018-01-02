@@ -7,9 +7,9 @@
 	.global-navbar {
 		background-color: var(--white);
 		display: grid;
-		grid-template-rows: 12rem;
-		grid-template-columns: minmax(23.5rem, 35rem) auto;
-		margin:0 5%;
+		grid-template-rows: 16vh;
+		grid-template-columns: minmax(17.5rem, auto) 58rem;
+		padding:0 5%;
 	}
 
 	section.mntech-logo {
@@ -33,13 +33,13 @@
 	section.navigation nav {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(11.3rem, 1fr));
-		grid-template-rows: 12rem;
+		grid-template-rows: 16vh;
 	}
 
 	section.navigation nav a {
 		align-self: end;
 		border-bottom: solid 2px var(--navy);
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		transition: 0.25s ease-in;
 	}
 

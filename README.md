@@ -156,3 +156,7 @@ I finished writing the navbar and also finished writing the landing page for the
 ### Thoughts:
 CSS Grid wails. Now that I am using it in practice it's intuitiveness is
 really shining. I love it!
+
+#Day 27: December 31, 2017
+### What I did:
+NOthing. Stewpid holidays! Back on track tomorrow!
