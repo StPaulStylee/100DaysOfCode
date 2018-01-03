@@ -11,8 +11,6 @@
     display: grid;
     grid-template-rows: 41vh 43vh;
     grid-template-columns: repeat(3, 1fr);
-
-    grid-gap: 1rem;
   }
 
   .page-header.home-header {
@@ -40,7 +38,55 @@
     grid-column: 3 / 7;
   }
 
-  .home-page > * {
-    background-color: red;
+  .service {
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
+
+  .web-design, .apps {
+    background-color: var(--cloud-grey);
+    text-shadow: -1px -1px 0 var(--white),
+    1px -1px 0 var(--white),
+    -1px 1px 0 var(--white),
+    1px 1px 0 var(--white)
+  }
+
+  .branding {
+    background-color: var(--storm-grey);
+    color: var(--white);
+    text-shadow: -1px -1px 0 var(--slate-grey),
+    1px -1px 0 var(--slate-grey),
+    -1px 1px 0 var(--slate-grey),
+    1px 1px 0 var(--slate-grey);
+  }
+
+  .web-design .service-header, .apps .service-header {
+    color: var(--navy);
+  }
+
+  .branding .service-header {
+    color: var(--white);
+  }
+
+  .service-header {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  .portfolio-link {
+    align-items: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .svg-container {
+    width: 14rem;
+  }
+
 }
