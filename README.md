@@ -167,3 +167,9 @@ I made a few styling changes to the landing and navbar. Then I got cracking on t
 page header ready to roll
 ### Thoughts:
 This CSS Grid thing kicks ass. That's all there is to say about it.
+
+# Day 30: January 2, 2018
+### What I did:
+Continued the rebuild of the MN Tech site by finishing the home page minus a few media queries needed before mobile layout is reached.
+### Thoughts:
+I'm cruising along. GRID WAILS.
