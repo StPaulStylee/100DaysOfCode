@@ -148,3 +148,30 @@ Buttons
 	color: var(--vibrant-green);
 	cursor: pointer;
 }
+
+/*--------------------------------------------------------------------------------------------
+Media Queries w/ shared Styles
+---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1365px) {
+
+	.content-container .header-content {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.content-container .header-content {
+		grid-column: 2 / 8;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+
+	.header-title {
+		font-size: 4rem;
+}
+
+	.content-container .header-content {
+		font-size: 2.5rem;
+	}
+}

@@ -1,9 +1,5 @@
 @supports  (grid-area: auto) {
 
-  @media screen and (max-width: 815px) {
-    /* All tablets in portrait and cell phones*/
-  }
-
   /*DON'T FORGET TO LOOK FOR STYLING THAT WILL APPLY ELSEWHERE
   WE ARE STAYING DRY ON THIS PROJECT*/
 
@@ -89,4 +85,17 @@
     width: 14rem;
   }
 
+  @media screen and (max-width: 860px) and (min-width: 816px) {
+    .service-header {
+      font-size: 3rem;
+    }
+
+    .svg-container {
+      width: 12rem;
+    }
+  }
+
+  @media screen and (max-width: 815px) {
+    /* All tablets in portrait and cell phones*/
+  }
 }
