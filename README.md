@@ -173,3 +173,13 @@ This CSS Grid thing kicks ass. That's all there is to say about it.
 Continued the rebuild of the MN Tech site by finishing the home page minus a few media queries needed before mobile layout is reached.
 ### Thoughts:
 I'm cruising along. GRID WAILS.
+
+# Day 31: January3, 2018
+### What I did:
+Nothing. We went out for happy hour and that was the end of me :(
+
+# Day 32: January 4, 2018
+### What I did:
+Set the media queries for the home page.
+### Thoughts:
+I didn't get much grid practice tonight... Mostly boring media query stuff. I am starting to feel like I want to finish this rebuild asap so I can move on to the next topic. I now have working knowledge of grid and I don't want to get bogged down on this site build for too long.
