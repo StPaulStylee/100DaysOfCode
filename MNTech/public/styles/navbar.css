@@ -17,12 +17,12 @@
 	}
 
 	figure.logo-image {
-		margin: 1rem;
+		height: 16vh;
+		padding: 1rem;
 	}
 
 	.logo-image img {
 		height: 100%;
-		width: 100%;
 	}
 
 	section.navigation {
