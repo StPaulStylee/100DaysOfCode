@@ -183,3 +183,13 @@ Nothing. We went out for happy hour and that was the end of me :(
 Set the media queries for the home page.
 ### Thoughts:
 I didn't get much grid practice tonight... Mostly boring media query stuff. I am starting to feel like I want to finish this rebuild asap so I can move on to the next topic. I now have working knowledge of grid and I don't want to get bogged down on this site build for too long.
+
+# Day 33: January 5th, 2018
+### What I did:
+I missed another day. CRIPES!
+
+# Day 34: January6th, 2018
+### What I did:
+Began work on about page and reorganized some CSS.
+### Thoughts:
+I have really focused on organizing my code - my CSS in particular - properly. It is really satisfying and is increasing my building efficiency.
