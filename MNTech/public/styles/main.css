@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 
 .header-title {
 	color: var(--vibrant-green);
-	font-size: 6em;
+	font-size: 6rem;
 	text-transform: uppercase;
 }
 
@@ -156,9 +156,22 @@ Shared Styles
 	display: grid;
 }
 
+.about-page,
+.services-page,
+.join-page {
+	grid-template-rows: 30vh 54vh;
+	grid-template-columns: 40vw 60vw;
+}
+
 .page-header {
 	background-color: var(--slate-grey);
 	display: flex;
+}
+
+.about-header,
+.services-header,
+.join-header {
+	grid-column: 1 /3;
 }
 
 .content-container {
