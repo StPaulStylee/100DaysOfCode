@@ -1,3 +1,5 @@
+@supports  (grid-area: auto) {
+
 .landing-page {
   background-color: var(--slate-grey);
   grid-template-rows: 40vh 60vh;
@@ -71,4 +73,6 @@
 
 .navigate-text.large {
   font-size: 10rem;
+}
+
 }
