@@ -188,8 +188,14 @@ I didn't get much grid practice tonight... Mostly boring media query stuff. I am
 ### What I did:
 I missed another day. CRIPES!
 
-# Day 34: January6th, 2018
+# Day 34: January 6th, 2018
 ### What I did:
 Began work on about page and reorganized some CSS.
 ### Thoughts:
 I have really focused on organizing my code - my CSS in particular - properly. It is really satisfying and is increasing my building efficiency.
+
+# Day 35: January 8th, 2018
+### What I did:
+I used CSS Grid to dominate the members section of the about page.
+### Thoughts:
+This is definitely more challenging now that I am dealing with more content. Grid is great when making an overall layout, at it is great for nested grids as well... but it definitely takes a little more care once you started trying to organize more content within grid items.
