@@ -1,5 +1,67 @@
 @supports  (grid-area: auto) {
 
+  .values-section-container {
+    display: grid;
+    grid-template-rows:  auto repeat(3, 1fr);
+  }
+
+  .values-legal-section.left-side {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .members-section.right-side {
+    background-color: var(--white);
+    grid-column: 1;
+  }
+
+  .member-bio > *,
+  .bio-header > * {
+    color: var(--navy);
+    font-size: 1.8rem;
+  }
+
+  .bio-header {
+    text-align: center;
+  }
+
+  .members-section-container {
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+  }
+
+  .member {
+    display: grid;
+    grid-template-rows: 10rem auto;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .image-container {
+    grid-column: 3/5;
+    justify-self: center;
+    width: 12rem;
+  }
+
+  .member-bio {
+    grid-column: 2/6;
+    grid-row: 2;
+    margin: 1rem;
+  }
+
+  .adrian .image-container {
+    background: url("/assets/images/adrian.jpg");
+    background-size: cover;
+  }
+
+  .hannah .image-container {
+    background: url("/assets/images/hannah.jpg");
+    background-size: cover;
+  }
+
+  .jeff .image-container {
+    background: url("/assets/images/jeff.jpg");
+    background-size: cover;
+  }
 
 
 }

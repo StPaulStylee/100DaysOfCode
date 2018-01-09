@@ -103,6 +103,7 @@ html {
 }
 
 img {
+	height: inherit;
 	width: inherit;
 }
 
@@ -123,10 +124,35 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 
 .header-content {
 	color: var(--white);
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
 }
+
+.header,
+.list-item,
+.list-header,
+.list-content {
+	color: var(--navy);
+}
+
+.header,
+.list-header {
+	text-transform: uppercase;
+}
+
+.header {
+	font-size: 2.6rem;
+}
+
+.list-item,
+.list-header {
+	font-size: 1.8rem;
+}
+
+
+
+
 
 /*--------------------------------------------------------------------------------------------
 Buttons
@@ -194,6 +220,10 @@ Shared Styles
 	grid-column: 3 / 7;
 }
 
+footer {
+	display: none;
+}
+
 /*--------------------------------------------------------------------------------------------
 Media Queries for Shared Styles
 ---------------------------------------------------------------------------------------------*/
@@ -219,6 +249,12 @@ Media Queries for Shared Styles
 
 	.content-container .header-content {
 		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.global-navbar {
+		background-color: red;
 	}
 }
 
