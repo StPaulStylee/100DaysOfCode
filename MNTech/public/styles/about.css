@@ -15,14 +15,14 @@
     grid-column: 1;
   }
 
-  .member-bio > *,
-  .bio-header > * {
-    color: var(--navy);
-    font-size: 1.8rem;
-  }
-
   .bio-header {
     text-align: center;
+  }
+
+  .bio-header > *,
+  .bio-content {
+    color: var(--navy);
+    font-size: 1.8rem;
   }
 
   .members-section-container {
@@ -32,20 +32,29 @@
 
   .member {
     display: grid;
-    grid-template-rows: 10rem auto;
+    grid-template-rows: 11rem auto auto;
     grid-template-columns: repeat(6, 1fr);
   }
 
   .image-container {
+    border: 1px solid var(--cloud-grey);
+    border-radius: 50%;
     grid-column: 3/5;
     justify-self: center;
-    width: 12rem;
+    width: 11rem;
   }
 
-  .member-bio {
+  .bio-header-container, .bio-content-container {
     grid-column: 2/6;
-    grid-row: 2;
     margin: 1rem;
+  }
+
+  .bio-header-container {
+    grid-row: 2;
+  }
+
+  .bio-content-container {
+    grid-row: 3;
   }
 
   .adrian .image-container {

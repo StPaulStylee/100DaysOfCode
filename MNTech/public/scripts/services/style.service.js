@@ -6,6 +6,7 @@ function StyleService() {
   const service = this;
 
   service.isActive = {};
+  service.isExpanded = false;
 
   service.setInitial = function(route) {
     // switch (route) {
@@ -44,5 +45,10 @@ function StyleService() {
     console.log(service.isActive);
     return service.isActive;
   }
+  // 
+  // service.expand = function() {
+  //   service.isExpanded = !service.isExpanded;
+  //   return service.isExpanded;
+  // }
 
 }// End of Service
