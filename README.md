@@ -199,3 +199,9 @@ I have really focused on organizing my code - my CSS in particular - properly. I
 I used CSS Grid to dominate the members section of the about page.
 ### Thoughts:
 This is definitely more challenging now that I am dealing with more content. Grid is great when making an overall layout, at it is great for nested grids as well... but it definitely takes a little more care once you started trying to organize more content within grid items.
+
+# Day 36: January 9th: 2018
+### What I did:
+I am playing with some 'ng-if' effects using angularjs
+### Thoughts:
+Mission creep can't set in. I need to finish these transitions tomorrow so I can get this site done and up. however, if these work out the way I want them to, it will look sweet.
