@@ -143,6 +143,7 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 
 .header {
 	font-size: 2.6rem;
+	margin-bottom: 1.6rem;
 }
 
 .list-item,
@@ -150,9 +151,9 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 	font-size: 1.8rem;
 }
 
-
-
-
+.list-header {
+		font-weight: 600;
+}
 
 /*--------------------------------------------------------------------------------------------
 Buttons
@@ -179,6 +180,10 @@ Buttons
 Shared Styles
 ---------------------------------------------------------------------------------------------*/
 @supports  (grid-area: auto) {
+
+body {
+	overflow-x: hidden;
+}
 
 .page {
 	display: grid;
@@ -220,8 +225,18 @@ Shared Styles
 	grid-column: 3 / 7;
 }
 
+.right-side,
+.left-side {
+	padding: 0 2rem;
+	overflow-y: scroll;
+}
+
+.list-item {
+	padding: 0 0 1rem 0;
+}
+
 footer {
-	display: none;
+	/*display: none;*/
 }
 
 /*--------------------------------------------------------------------------------------------

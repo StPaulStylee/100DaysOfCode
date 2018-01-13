@@ -3,9 +3,11 @@
   .values-section-container {
     display: grid;
     grid-template-rows:  auto repeat(3, 1fr);
+    height: 54vh;
   }
 
   .values-legal-section.left-side {
+    background-color: var(--cloud-grey);
     grid-row: 2;
     grid-column: 2;
   }
@@ -16,7 +18,8 @@
   }
 
   .bio-header {
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
   }
 
   .bio-header > *,
@@ -30,9 +33,13 @@
     grid-template-rows: auto repeat(3, 1fr);
   }
 
+  .members-header.header {
+    text-align: center;
+  }
+
   .member {
     display: grid;
-    grid-template-rows: 11rem auto auto;
+    grid-template-rows: 11rem auto;
     grid-template-columns: repeat(6, 1fr);
   }
 
@@ -49,12 +56,10 @@
     margin: 1rem;
   }
 
-  .bio-header-container {
+  .bio-container {
     grid-row: 2;
-  }
-
-  .bio-content-container {
-    grid-row: 3;
+    grid-column: 2 / 6;
+    margin: 1rem 0 2rem;
   }
 
   .adrian .image-container {
