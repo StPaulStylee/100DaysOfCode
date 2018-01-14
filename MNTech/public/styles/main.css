@@ -78,9 +78,7 @@ html {
 *, *::before, *::after {
 	box-sizing: inherit;
 }
-input[type="checkbox"] {
-  transform:scale(1.5, 1.5);
-}
+
 
 /*--------------------------------------------------------------------------------------------
 Colors
@@ -132,7 +130,8 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 .header,
 .list-item,
 .list-header,
-.list-content {
+.list-content,
+label {
 	color: var(--navy);
 }
 
@@ -147,7 +146,10 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
 }
 
 .list-item,
-.list-header {
+.list-header,
+input,
+textarea,
+label {
 	font-size: 1.8rem;
 }
 
@@ -183,6 +185,16 @@ Shared Styles
 
 body {
 	overflow-x: hidden;
+}
+
+input[type="checkbox"] {
+  transform:scale(1.5, 1.5);
+}
+
+input, textarea {
+	background-color: var(--white);
+	border: 1px solid var(--storm-grey);
+	outline-color: var(--vibrant-green);
 }
 
 .page {
@@ -229,6 +241,14 @@ body {
 .left-side {
 	padding: 0 2rem;
 	overflow-y: scroll;
+}
+
+.right-side {
+	background-color: var(--white);
+}
+
+.left-side {
+	background-color: var(--cloud-grey);
 }
 
 .list-item {
