@@ -205,3 +205,23 @@ This is definitely more challenging now that I am dealing with more content. Gri
 I am playing with some 'ng-if' effects using angularjs
 ### Thoughts:
 Mission creep can't set in. I need to finish these transitions tomorrow so I can get this site done and up. however, if these work out the way I want them to, it will look sweet.
+
+# Day 37: January 10th, 2018
+### What I did:
+Nothing. I am a slacker.
+
+# Day 38: January 11, 2018
+### What I did:
+Nothing again. Damnit.
+
+#Day 39: January 12, 2018
+### What I did:
+I finished the about page with the exception to media queries.
+### Thoughts:
+It's been one of those weeks... Work is boring and I'm not super motivated. No excuses. Starting a streak tomorrow!
+
+#Day 42: January 15th, 2018
+### What I did:
+used grid to set up the forms for the site.
+### Thoughts:
+The ease the grid gives me to align items - forms in this case - never ceases to amaze me.

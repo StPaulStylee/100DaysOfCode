@@ -39,27 +39,31 @@
 
   .member {
     display: grid;
-    grid-template-rows: 11rem auto;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 11rem 40rem;
+    grid-template-columns: repeat(8, 1fr);
   }
 
   .image-container {
     border: 1px solid var(--cloud-grey);
     border-radius: 50%;
-    grid-column: 3/5;
+    grid-column: 4/6;
     justify-self: center;
     width: 11rem;
   }
 
   .bio-header-container, .bio-content-container {
-    grid-column: 2/6;
+    grid-column: 2/8;
     margin: 1rem;
   }
 
   .bio-container {
     grid-row: 2;
-    grid-column: 2 / 6;
+    grid-column: 2 / 8;
     margin: 1rem 0 2rem;
+  }
+
+  .member-name {
+    text-align: center;
   }
 
   .adrian .image-container {

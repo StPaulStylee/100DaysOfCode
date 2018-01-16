@@ -100,6 +100,11 @@ html {
 	font-size: 62.5%;
 }
 
+body {
+	margin: 0 auto;
+	max-width: 110rem;
+}
+
 img {
 	height: inherit;
 	width: inherit;
@@ -136,13 +141,14 @@ label {
 }
 
 .header,
-.list-header {
+.list-header,
+label {
 	text-transform: uppercase;
 }
 
 .header {
 	font-size: 2.6rem;
-	margin-bottom: 1.6rem;
+	margin-bottom: 1rem;
 }
 
 .list-item,
@@ -157,6 +163,9 @@ label {
 		font-weight: 600;
 }
 
+label {
+	font-weight: 400;
+}
 /*--------------------------------------------------------------------------------------------
 Buttons
 ---------------------------------------------------------------------------------------------*/
@@ -195,6 +204,7 @@ input, textarea {
 	background-color: var(--white);
 	border: 1px solid var(--storm-grey);
 	outline-color: var(--vibrant-green);
+	padding: 0.75rem;
 }
 
 .page {
@@ -205,7 +215,7 @@ input, textarea {
 .services-page,
 .join-page {
 	grid-template-rows: 30vh 54vh;
-	grid-template-columns: 40vw 60vw;
+	grid-template-columns: 42% 58%;
 }
 
 .page-header {
@@ -224,17 +234,17 @@ input, textarea {
 	align-self: center;
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(32, 1fr);
 	justify-content: center;
 	text-align: center;
 }
 
 .content-container .header-title {
-	grid-column: 1/ 9;
+	grid-column: 2/ 32;
 }
 
 .content-container .header-content {
-	grid-column: 3 / 7;
+	grid-column: 7 / 27;
 }
 
 .right-side,
@@ -253,6 +263,12 @@ input, textarea {
 
 .list-item {
 	padding: 0 0 1rem 0;
+}
+
+.input-container {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	margin-bottom: 1rem;
 }
 
 footer {

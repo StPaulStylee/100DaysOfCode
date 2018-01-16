@@ -66,12 +66,12 @@
         <label class="sample-label" for="sample">Website/Blog/Portfolio</label>
         <input class="sample-input" type="text" name="sample" ng-model="join.sample" ng-focus="join.setFocus(true)" required />
       </div>
-      <div class="input-container info-container">
+      <div class="input-container description-container">
         <label class="info-label" for="info">Tell us about yourself</label>
         <textarea class="info-input" name="info" ng-model="join.info" ng-focus="join.setFocus(true)" required ></textarea>
       </div>
       <div class="input-container submit-button">
-        <input type="submit" ng-show="join.isFocused" value="Submit" />
+        <input type="submit"  value="Submit" />
       </div>
     </form>
   </section>
