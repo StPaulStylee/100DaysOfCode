@@ -225,3 +225,9 @@ It's been one of those weeks... Work is boring and I'm not super motivated. No e
 used grid to set up the forms for the site.
 ### Thoughts:
 The ease the grid gives me to align items - forms in this case - never ceases to amaze me.
+
+#Day 44: January 17th, 2018
+### What I did:
+I made a SCRUM like board listing what remains to do on the MN Tech rebuild. I completely finished all media queries and got form styling monolithic across all (most) major browsers.
+### Thoughts:
+I am glad I made the SCRUM like list... It will help keep me focused and it feels good to cross things off the board. As I had feared however, this project is dragging on and I am not excited... This 100 days of code is great, but I am spinning my wheels here. NEW GOAL: HAVE THIS DONE BY DAY 50 and have a great 2nd half!
