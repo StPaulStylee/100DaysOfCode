@@ -13,7 +13,7 @@
   }
 
   .home-header .content-container .header-content {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .service {
@@ -67,9 +67,15 @@
     width: 14rem;
   }
 
-  @media screen and (max-width: 1365px) {
+  @media screen and (max-width: 1085px) {
     .home-header .content-container .header-content {
-      font-size: 3rem;
+      font-size: 2.75rem;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .home-header .content-container .header-content {
+      font-size: 2.5rem;
     }
   }
 
