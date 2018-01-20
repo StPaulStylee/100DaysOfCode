@@ -214,20 +214,26 @@ Nothing. I am a slacker.
 ### What I did:
 Nothing again. Damnit.
 
-#Day 39: January 12, 2018
+# Day 39: January 12, 2018
 ### What I did:
 I finished the about page with the exception to media queries.
 ### Thoughts:
 It's been one of those weeks... Work is boring and I'm not super motivated. No excuses. Starting a streak tomorrow!
 
-#Day 42: January 15th, 2018
+# Day 42: January 15th, 2018
 ### What I did:
 used grid to set up the forms for the site.
 ### Thoughts:
 The ease the grid gives me to align items - forms in this case - never ceases to amaze me.
 
-#Day 44: January 17th, 2018
+# Day 44: January 17th, 2018
 ### What I did:
 I made a SCRUM like board listing what remains to do on the MN Tech rebuild. I completely finished all media queries and got form styling monolithic across all (most) major browsers.
 ### Thoughts:
 I am glad I made the SCRUM like list... It will help keep me focused and it feels good to cross things off the board. As I had feared however, this project is dragging on and I am not excited... This 100 days of code is great, but I am spinning my wheels here. NEW GOAL: HAVE THIS DONE BY DAY 50 and have a great 2nd half!
+
+# Day 46: January 19th, 2018
+### What I did:
+Built the grid layout for the portfolio page and inserted and organized the grid items
+### Thoughts:
+I am well established with Grid now, which is awesome. Now I just need to finish the GD website. Day 50 is approaching!
