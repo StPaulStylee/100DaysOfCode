@@ -114,8 +114,8 @@ img {
 Fonts/Typography
 ---------------------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6, span, p, input, form, textarea {
-	color: var(--dark-grey);
+h1, h2, h3, h4, h5, h6, span, p, input, form, textarea, a {
+	color: var(--navy);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -151,16 +151,17 @@ label {
 	margin-bottom: 1rem;
 }
 
-.list-item,
-.list-header,
-input,
-textarea,
-label {
+.list-item, .list-header,
+.portfolio-content, .portfolio-item-title,
+.bio-header > *, .bio-content,
+input, textarea, label {
 	font-size: 1.8rem;
 }
 
+.bio-header,
+.portfolio-item-title,
 .list-header {
-		font-weight: 600;
+	font-weight: 600;
 }
 
 label {
@@ -231,6 +232,11 @@ textarea:hover, textarea:focus, textarea:active {
 .services-header,
 .join-header {
 	grid-column: 1 /3;
+}
+
+.page-header.home-header,
+.portfolio-header {
+	grid-column: 1 / 4;
 }
 
 .content-container {

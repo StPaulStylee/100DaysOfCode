@@ -17,17 +17,6 @@
     grid-column: 1;
   }
 
-  .bio-header {
-    font-weight: 600;
-    text-align: left;
-  }
-
-  .bio-header > *,
-  .bio-content {
-    color: var(--navy);
-    font-size: 1.8rem;
-  }
-
   .members-section-container {
     display: grid;
     grid-template-rows: auto repeat(3, 1fr);
