@@ -237,3 +237,9 @@ I am glad I made the SCRUM like list... It will help keep me focused and it feel
 Built the grid layout for the portfolio page and inserted and organized the grid items
 ### Thoughts:
 I am well established with Grid now, which is awesome. Now I just need to finish the GD website. Day 50 is approaching!
+
+# Day 47: January 20th, 2018
+### What I did:
+Inserted the rest of the portfolio content.
+### Thoughts:
+Still grinding....
