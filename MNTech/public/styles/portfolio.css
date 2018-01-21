@@ -1,10 +1,14 @@
 .portfolio-page {
-  grid-template-rows: 30vh 54vh;
+  grid-template-rows: 30vh auto;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .portfolio-page .content-container .header-content {
   grid-column: 9 / 25;
+}
+
+.portfolio-column {
+  padding: 2rem;
 }
 
 .portfolio-column-header {
@@ -26,6 +30,15 @@
   grid-row: 3;
 }
 
+.portfolio-branding {
+  border-left: 1px solid var(--cloud-grey);
+  border-right: 1px solid var(--cloud-grey);
+}
+
+.portfolio-apps .list-content {
+  margin-top: 5rem;
+}
+
 .line-creator {
   background-color: var(--cloud-grey);
   height: 1px;
@@ -35,6 +48,6 @@
 
 .tools {
   height: 10rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 10rem;
 }

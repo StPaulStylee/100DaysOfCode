@@ -55,7 +55,8 @@
 	.global-navbar nav a.home,
 	.global-navbar nav a.about,
 	.global-navbar nav a.services,
-	.global-navbar nav a.join {
+	.global-navbar nav a.join,
+	.global-navbar nav a.portfolio {
 		border-bottom: solid 2px var(--vibrant-green);
 	}
 

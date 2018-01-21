@@ -100,11 +100,6 @@ html {
 	font-size: 62.5%;
 }
 
-body {
-	margin: 0 auto;
-	max-width: 110rem;
-}
-
 img {
 	height: inherit;
 	width: inherit;
@@ -194,6 +189,8 @@ Shared Styles
 @supports  (grid-area: auto) {
 
 body {
+	display: grid;
+	grid-template-columns: auto 110rem auto;
 	overflow-x: hidden;
 }
 
@@ -210,6 +207,11 @@ input, textarea {
 input:hover, input:focus, input:active,
 textarea:hover, textarea:focus, textarea:active {
 	outline: 2px solid var(--vibrant-green);
+}
+
+.body-wrap {
+	margin: 0 auto;
+	max-width: 110rem;
 }
 
 .page {

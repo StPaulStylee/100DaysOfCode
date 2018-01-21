@@ -34,6 +34,7 @@
     <script src="/scripts/controllers/home.controller.js"></script>
     <script src="/scripts/controllers/about.controller.js"></script>
     <script src="/scripts/controllers/bylaws.controller.js"></script>
+    <script src="/scripts/controllers/portfolio.controller.js"></script>
     <script src="/scripts/controllers/survey.controller.js"></script>
 
     <!-- Services -->
@@ -45,32 +46,35 @@
     <base href="/" />
   </head>
   <body>
-    <div class="test" ng-controller="BaseController as base">
-      <header class="global-navbar" ng-class="{open: base.isOpen}">
-        <section class="mntech-logo">
-          <figure class="logo-image">
-            <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech." title="The MN Tech Logo" />
-          </figure>
-        </section>
-        <section class="navigation">
-          <nav>
-            <a ng-class="{home: base.isActive.home}" class href="/home" ng-click="base.setActive('home')"><span class="nav-link">Home</span></a
-            ><a ng-class="{about: base.isActive.about}" class href="/about" ng-click="base.setActive('about')"><span class="nav-link">About</span></a
-            ><a ng-class="{services: base.isActive.services}" class href="/services" ng-click="base.setActive('services')"><span class="nav-link">Services</span></a
-            ><a ng-class="{join: base.isActive.join}" href="/join" class ng-click="base.setActive('join')"><span class="nav-link">Join</span></a>
-            <!-- <a href="/blog"><span class="nav-link">Blog</span></a> -->
-          </nav>
-        </section>
-      </header>
-      <div class="hamburger-container">
-        <div class="nav-hamburger" ng-class="{open: base.isOpen}" ng-click="base.setOpen()">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class="background-sidebar"></div>
+    <div class="body-wrap">
+      <div class="test" ng-controller="BaseController as base">
+        <header class="global-navbar" ng-class="{open: base.isOpen}">
+          <section class="mntech-logo">
+            <figure class="logo-image">
+              <img src="/assets/images/mntc_logo_grey.png" alt="The logo for Minnesota Tech." title="The MN Tech Logo" />
+            </figure>
+          </section>
+          <section class="navigation">
+            <nav>
+              <a ng-class="{home: base.isActive.home}" class href="/home" ng-click="base.setActive('home')"><span class="nav-link">Home</span></a
+              ><a ng-class="{about: base.isActive.about}" class href="/about" ng-click="base.setActive('about')"><span class="nav-link">About</span></a
+              ><a ng-class="{services: base.isActive.services}" class href="/services" ng-click="base.setActive('services')"><span class="nav-link">Services</span></a
+              ><a ng-class="{portfolio: base.isActive.portfolio}" class href="/portfolio" class ng-click="base.setActive('portfolio')"><span class="nav-link">Portfolio</span></a>
+              <!-- <a ng-class="{join: base.isActive.join}" href="/join" class ng-click="base.setActive('join')"><span class="nav-link">Join</span></a> -->
+              <!-- <a href="/blog"><span class="nav-link">Blog</span></a> -->
+            </nav>
+          </section>
+        </header>
+        <div class="hamburger-container">
+          <div class="nav-hamburger" ng-class="{open: base.isOpen}" ng-click="base.setOpen()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
-  </div>
     <ng-view>
 
     </ng-view>
@@ -82,5 +86,7 @@
       </div>
       <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
+    </div>
+    <div class="background-sidebar"></div>
   </body>
 </html>
