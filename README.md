@@ -243,3 +243,9 @@ I am well established with Grid now, which is awesome. Now I just need to finish
 Inserted the rest of the portfolio content.
 ### Thoughts:
 Still grinding....
+
+# Day 48: January 21th, 2018
+### What I did:
+I added the new portfolio page to the navigating and got the page repsonsive. I also created the grid for the sidebar banner wraps.
+### Thoughts:
+I made some good progress today, I was super excited to see how easy CSS grid made it to make the side bar wraps that will be visible up until 1110px width. And holy shit, I am so full of anxiety because the Vikings play in the NFC Championship game tonight. SKOL VIKINGS!
