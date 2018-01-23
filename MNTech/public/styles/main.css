@@ -186,12 +186,14 @@ Buttons
 /*--------------------------------------------------------------------------------------------
 Shared Styles
 ---------------------------------------------------------------------------------------------*/
+
 @supports  (grid-area: auto) {
 
 body {
-	display: grid;
-	grid-template-columns: auto 110rem auto;
-	overflow-x: hidden;
+	background-image: url("/assets/images/background.jpg");
+	background-repeat: repeat-x;
+	margin: 0 auto;
+	max-width: 110rem;
 }
 
 input[type="checkbox"] {
@@ -207,11 +209,6 @@ input, textarea {
 input:hover, input:focus, input:active,
 textarea:hover, textarea:focus, textarea:active {
 	outline: 2px solid var(--vibrant-green);
-}
-
-.body-wrap {
-	margin: 0 auto;
-	max-width: 110rem;
 }
 
 .page {
