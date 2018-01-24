@@ -2,7 +2,6 @@ angular.module('mnTechSite')
        .controller('ServicesController', ServicesController);
 
 function ServicesController(EmailService, StyleService) {
-  console.log('ServicesController Loaded');
 
   const ctrl = this;
  //
@@ -13,9 +12,8 @@ function ServicesController(EmailService, StyleService) {
 
   ctrl.sendQuoteData = function(data) {
     data.subject = "Requesting A Quote"
-    console.log(ServicesController.name);
     EmailService.sendQuoteData(data).then(function(response){
-      console.log("Response from submit: ", repsonse);
+      console.log("Response from submit: ", response);
     });
   }
 

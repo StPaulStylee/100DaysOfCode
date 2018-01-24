@@ -23,7 +23,8 @@ function EmailService($http) {
       };
       return $http.post(route + quoteRoute, service.emailData)
       .then(function(response){
-        return repsonse;
+        console.log(response);
+        return response;
       });
     }
 

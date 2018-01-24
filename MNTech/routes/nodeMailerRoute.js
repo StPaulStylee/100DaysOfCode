@@ -10,13 +10,19 @@ let transporter = nodemailer.createTransport({
   },
 });
 
+// Trying to get this to return the response value.. I think I am
+// running into some sort of hoisting issue.
 let sendMail = function functionName(mailOptions) {
+  var responseData;
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
         return console.log("From sendMail: ", error, "Object: ", mailOptions);
     }
     console.log('Message %s sent: %s', info.messageId, info.response);
+    responseData = info.response;
   });
+  console.log("Reponse Data: " + responseData);
+  return responseData;
 }
 
 router.post('/quoteMailer', function(req, res) {
