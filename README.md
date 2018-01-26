@@ -249,3 +249,9 @@ Still grinding....
 I added the new portfolio page to the navigating and got the page repsonsive. I also created the grid for the sidebar banner wraps.
 ### Thoughts:
 I made some good progress today, I was super excited to see how easy CSS grid made it to make the side bar wraps that will be visible up until 1110px width. And holy shit, I am so full of anxiety because the Vikings play in the NFC Championship game tonight. SKOL VIKINGS!
+
+# Day 52: January 25th, 2018
+### What I did:
+Struggled with getting the right thing to return in my route because I am struggling with the asynchroncity of JS. I am extremely frustrated. BIG SURPRISE.
+### Thoughts:
+I'm taking a shower and going to bed. 
