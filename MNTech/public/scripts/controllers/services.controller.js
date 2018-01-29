@@ -12,6 +12,8 @@ function ServicesController(EmailService, StyleService) {
 
   ctrl.sendQuoteData = function(data) {
     data.subject = "Requesting A Quote"
+    ctrl.quoteForm.$setPristine();
+    ctrl.quoteForm.$setUntouched();
     EmailService.sendQuoteData(data).then(function(response){
       console.log("Response from submit: ", response);
     });

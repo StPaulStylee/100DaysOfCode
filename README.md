@@ -254,4 +254,10 @@ I made some good progress today, I was super excited to see how easy CSS grid ma
 ### What I did:
 Struggled with getting the right thing to return in my route because I am struggling with the asynchroncity of JS. I am extremely frustrated. BIG SURPRISE.
 ### Thoughts:
-I'm taking a shower and going to bed. 
+I'm taking a shower and going to bed.
+
+# Day 55: January 28th, 2018
+### What I did:
+Set up the form to clear on submission.
+### Thoughts:
+I am moving on from the aysynchronous problem I was having... I want to figure it out but I am in dire need of completing this site... THIS SHIT IS DRAGGING ON! So, I just used setPristine and setUnctouched to clear the text inputs once it is submitted. Firefox is setting the input borders to the required color, which is annoying.

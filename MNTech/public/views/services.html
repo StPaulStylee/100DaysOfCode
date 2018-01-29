@@ -39,7 +39,7 @@
 
   <section class="form-section right-side" ng-class="{focused: services.isFocused}">
     <h2 class="quote-header header">Request A Quote</h2>
-    <form class="request-form" ng-submit="services.sendQuoteData(services)" ng-model="services">
+    <form class="request-form" name="services.quoteForm" ng-submit="services.sendQuoteData(services); services={}" ng-model="services">
       <div class="input-container">
         <label class="name-label" for="name">Name</label>
         <input class="name-input" type="text" name="name" ng-model="services.name" ng-focus="services.setFocus(true)" required />
