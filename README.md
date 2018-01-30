@@ -267,3 +267,9 @@ I am moving on from the aysynchronous problem I was having... I want to figure i
 Got rid of all uses of css variables, getting ready for progressive enhancement. Worked on a solution for the landing page not taking up the whole screen width but I kept coming back to the original problem. I will need to find a new solution
 ### Thoughts:
 Getting closer. Very close actually. I just keep getting stuck on these seemingly small problems. I will sleep on this and have a solution tomrrow.
+
+# Day 57: January 30th, 2018
+### What I did:
+Favicon, fixed landing page mishaps, began mobile styling via media Queries
+### Thoughts:
+So close!

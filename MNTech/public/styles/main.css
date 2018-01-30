@@ -189,16 +189,18 @@ Buttons
 Shared Styles
 ---------------------------------------------------------------------------------------------*/
 
-.body-wrap {
+.page,
+.global-navbar {
 	position:relative;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	margin: 0 auto;
-	max-width: 110rem;
+	width: 110rem;
 }
 
-.body-wrap:before, .body:after {
+.page:before, .page:after,
+.global-navbar:before, .global-navbar:after {
 	content:"";
  	position:absolute;
  	z-index:-1;
@@ -212,7 +214,7 @@ Shared Styles
  	-moz-border-radius:100px / 10px;
 }
 
-.body-wrap:after {
+.page:after, .global-navbar:after {
 	right:10px;
 	left:auto;
 	-webkit-transform:skew(8deg) rotate(3deg);
@@ -264,8 +266,11 @@ textarea:hover, textarea:focus, textarea:active {
 Media Queries for Shared Styles
 ---------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1365px) {
-
+@media screen and (max-width: 1100px) {
+	.page,
+	.global-navbar {
+		width: unset;
+	}
 }
 
 @media screen and (max-width: 1085px) {

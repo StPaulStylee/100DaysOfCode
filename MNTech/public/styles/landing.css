@@ -1,8 +1,9 @@
 
-.landing-page {
+.landing-page.page {
   background-color: #333D46;
   left: 0;
-  position: absolute;
+  margin: unset;
+  position: fixed;
   top: 0;
   width: 100vw;
 }
@@ -50,6 +51,48 @@
 
 .navigate-text.large {
   font-size: 10rem;
+}
+
+@media screen and (max-width: 715px) {
+  .logo-container-landing {
+    width: 18rem;
+}
+
+  .navigate-text {
+    font-size: 5rem;
+  }
+
+  .navigate-text.large {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .logo-container-landing {
+    width: 14rem;
+}
+
+  .navigate-text {
+    font-size: 3rem;
+  }
+
+  .navigate-text.large {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo-container-landing {
+    width: 11rem;
+}
+
+  .navigate-text {
+    font-size: 2rem;
+  }
+
+  .navigate-text.large {
+    font-size: 3rem;
+  }
 }
 
 @supports  (grid-area: auto) {
