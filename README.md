@@ -261,3 +261,9 @@ I'm taking a shower and going to bed.
 Set up the form to clear on submission.
 ### Thoughts:
 I am moving on from the aysynchronous problem I was having... I want to figure it out but I am in dire need of completing this site... THIS SHIT IS DRAGGING ON! So, I just used setPristine and setUnctouched to clear the text inputs once it is submitted. Firefox is setting the input borders to the required color, which is annoying.
+
+# Day 56: January 29th, 2018
+### What I did:
+Got rid of all uses of css variables, getting ready for progressive enhancement. Worked on a solution for the landing page not taking up the whole screen width but I kept coming back to the original problem. I will need to find a new solution
+### Thoughts:
+Getting closer. Very close actually. I just keep getting stuck on these seemingly small problems. I will sleep on this and have a solution tomrrow.

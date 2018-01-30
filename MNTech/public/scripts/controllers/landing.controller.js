@@ -6,7 +6,6 @@ function LandingController(StyleService) {
 
   const ctrl = this;
 
-
   ctrl.setInitial = function(route) {
       StyleService.setInitial(route);
   }

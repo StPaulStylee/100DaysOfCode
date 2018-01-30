@@ -1,3 +1,24 @@
+.portfolio-column {
+  padding: 2rem;
+}
+
+.portfolio-item {
+  padding-bottom: 5rem;
+}
+
+.portfolio-apps .list-content {
+  margin-top: 5rem;
+}
+
+.line-creator {
+  background-color: #C0C5CE;;
+  height: 1px;
+  margin: 0 auto 4rem;
+  width: 50%;
+}
+
+@supports  (grid-area: auto) {
+
 .portfolio-page {
   grid-template-rows: 30vh auto;
   grid-template-columns: repeat(3, 1fr);
@@ -5,10 +26,6 @@
 
 .portfolio-page .content-container .header-content {
   grid-column: 9 / 25;
-}
-
-.portfolio-column {
-  padding: 2rem;
 }
 
 .portfolio-column-header {
@@ -19,7 +36,6 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 100%;
-  padding-bottom: 5rem;
 }
 
 .portfolio-image-container {
@@ -35,19 +51,10 @@
   border-right: 1px solid var(--cloud-grey);
 }
 
-.portfolio-apps .list-content {
-  margin-top: 5rem;
-}
-
-.line-creator {
-  background-color: var(--cloud-grey);
-  height: 1px;
-  margin: 0 auto 4rem;
-  width: 50%;
-}
-
 .tools {
   height: 10rem;
   margin: 2rem auto;
   width: 10rem;
+}
+
 }

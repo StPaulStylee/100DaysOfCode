@@ -83,6 +83,8 @@ html {
 /*--------------------------------------------------------------------------------------------
 Colors
 ---------------------------------------------------------------------------------------------*/
+/*Not actually in use because not supported in a few
+browsers. When they die, vars will live!!*/
 :root {
 --slate-grey: #333D46;
 --vibrant-green: #B1DD01;
@@ -110,18 +112,18 @@ Fonts/Typography
 ---------------------------------------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6, span, p, input, form, textarea, a {
-	color: var(--navy);
+	color: #123855;
   font-family: 'Montserrat', sans-serif;
 }
 
 .header-title {
-	color: var(--vibrant-green);
+	color: #B1DD01;
 	font-size: 6rem;
 	text-transform: uppercase;
 }
 
 .header-content {
-	color: var(--white);
+	color: #f5f5f5;
 	font-size: 1.8rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
@@ -132,7 +134,7 @@ h1, h2, h3, h4, h5, h6, span, p, input, form, textarea, a {
 .list-header,
 .list-content,
 label {
-	color: var(--navy);
+	color: #123855;
 }
 
 .header,
@@ -143,7 +145,7 @@ label {
 
 .header {
 	font-size: 2.6rem;
-	margin-bottom: 1rem;
+	margin: 0.5rem 0 1rem;
 }
 
 .list-item, .list-header,
@@ -178,8 +180,8 @@ Buttons
 
 .request-form.ng-valid-required input[type="submit"],
 .survey-form input[type="submit"] {
-	background: var(--slate-grey);
-	color: var(--vibrant-green);
+	background: #333D46;
+	color: #B1DD01;
 	cursor: pointer;
 }
 
@@ -187,9 +189,7 @@ Buttons
 Shared Styles
 ---------------------------------------------------------------------------------------------*/
 
-@supports  (grid-area: auto) {
-
-body {
+.body-wrap {
 	position:relative;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -198,7 +198,7 @@ body {
 	max-width: 110rem;
 }
 
-body:before, body:after {
+.body-wrap:before, .body:after {
 	content:"";
  	position:absolute;
  	z-index:-1;
@@ -210,10 +210,9 @@ body:before, body:after {
  	left:0;
  	right:0;
  	-moz-border-radius:100px / 10px;
- 	/*border-radius:100px / 10px;*/
 }
 
-body:after {
+.body-wrap:after {
 	right:10px;
 	left:auto;
 	-webkit-transform:skew(8deg) rotate(3deg);
@@ -228,15 +227,70 @@ input[type="checkbox"] {
 }
 
 input, textarea {
-	background-color: var(--white);
-	border: 1px solid var(--storm-grey);
+	background-color: #f5f5f5;
+	border: 1px solid #515961;
 	padding: 0.75rem;
 }
 
 input:hover, input:focus, input:active,
 textarea:hover, textarea:focus, textarea:active {
-	outline: 2px solid var(--vibrant-green);
+	outline: 2px solid #B1DD01;
 }
+
+.right-side {
+	background-color: #f5f5f5;
+}
+
+.left-side {
+	background-color: #C0C5CE;
+}
+
+.page-header {
+	background-color: #333D46;
+}
+
+.right-side,
+.left-side {
+	padding: 0 2rem;
+	overflow-y: scroll;
+}
+
+.list-item {
+	padding: 0 0 1rem 0;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+Media Queries for Shared Styles
+---------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1365px) {
+
+}
+
+@media screen and (max-width: 1085px) {
+
+	.header-title {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.header-title {
+		font-size: 4rem;
+	}
+	.content-container .header-content {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.global-navbar {
+		background-color: red;
+	}
+}
+
+@supports  (grid-area: auto) {
 
 .page {
 	display: grid;
@@ -250,7 +304,6 @@ textarea:hover, textarea:focus, textarea:active {
 }
 
 .page-header {
-	background-color: var(--slate-grey);
 	display: flex;
 }
 
@@ -283,24 +336,6 @@ textarea:hover, textarea:focus, textarea:active {
 	grid-column: 7 / 27;
 }
 
-.right-side,
-.left-side {
-	padding: 0 2rem;
-	overflow-y: scroll;
-}
-
-.right-side {
-	background-color: var(--white);
-}
-
-.left-side {
-	background-color: var(--cloud-grey);
-}
-
-.list-item {
-	padding: 0 0 1rem 0;
-}
-
 .input-container {
 	display: grid;
 	grid-template-rows: repeat(2, auto);
@@ -309,36 +344,6 @@ textarea:hover, textarea:focus, textarea:active {
 
 footer {
 	/*display: none;*/
-}
-
-/*--------------------------------------------------------------------------------------------
-Media Queries for Shared Styles
----------------------------------------------------------------------------------------------*/
-
-@media screen and (max-width: 1365px) {
-
-}
-
-@media screen and (max-width: 1085px) {
-
-	.header-title {
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 975px) {
-	.header-title {
-		font-size: 4rem;
-	}
-	.content-container .header-content {
-		font-size: 1.6rem;
-	}
-}
-
-@media screen and (max-width: 815px) {
-	.global-navbar {
-		background-color: red;
-	}
 }
 
 }

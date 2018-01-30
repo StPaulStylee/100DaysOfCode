@@ -1,3 +1,36 @@
+.values-legal-section.left-side {
+  background-color: #C0C5CE;
+}
+
+.members-section.right-side {
+  background-color: #f5f5f5;
+}
+
+.members-header.header {
+  text-align: center;
+}
+
+.image-container {
+  border: 1px solid #C0C5CE;
+  border-radius: 50%;
+  width: 11rem;
+}
+
+.adrian .image-container {
+  background: url("/assets/images/adrian.jpg");
+  background-size: cover;
+}
+
+.hannah .image-container {
+  background: url("/assets/images/hannah.jpg");
+  background-size: cover;
+}
+
+.jeff .image-container {
+  background: url("/assets/images/jeff.jpg");
+  background-size: cover;
+}
+
 @supports  (grid-area: auto) {
 
   .values-section-container {
@@ -7,23 +40,17 @@
   }
 
   .values-legal-section.left-side {
-    background-color: var(--cloud-grey);
     grid-row: 2;
     grid-column: 2;
   }
 
   .members-section.right-side {
-    background-color: var(--white);
     grid-column: 1;
   }
 
   .members-section-container {
     display: grid;
     grid-template-rows: auto repeat(3, 1fr);
-  }
-
-  .members-header.header {
-    text-align: center;
   }
 
   .member {
@@ -33,11 +60,8 @@
   }
 
   .image-container {
-    border: 1px solid var(--cloud-grey);
-    border-radius: 50%;
     grid-column: 4/6;
     justify-self: center;
-    width: 11rem;
   }
 
   .bio-header-container, .bio-content-container {
@@ -54,21 +78,4 @@
   .member-name {
     text-align: center;
   }
-
-  .adrian .image-container {
-    background: url("/assets/images/adrian.jpg");
-    background-size: cover;
-  }
-
-  .hannah .image-container {
-    background: url("/assets/images/hannah.jpg");
-    background-size: cover;
-  }
-
-  .jeff .image-container {
-    background: url("/assets/images/jeff.jpg");
-    background-size: cover;
-  }
-
-
 }

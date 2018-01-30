@@ -7,6 +7,11 @@ function StyleService() {
 
   service.isActive = {};
   service.isExpanded = false;
+  service.isLanding = false;
+
+  service.isLandingActive = function(bool) {
+    service.isLanding = bool;
+  }
 
   service.setInitial = function(route) {
     // switch (route) {

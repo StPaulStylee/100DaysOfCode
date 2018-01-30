@@ -1,15 +1,19 @@
-@supports  (grid-area: auto) {
-
-	@media screen and (max-width: 815px) {
-		/* All tablets in portrait and cell phones*/
+	.global-navbar {
+	  background-color: #f5f5f5;
+		padding:0 5%;
 	}
 
-	.global-navbar {
-		background-color: var(--white);
-		display: grid;
-		grid-template-rows: 16vh;
-		grid-template-columns: minmax(17.5rem, auto) 58rem;
-		padding:0 5%;
+	section.navigation nav a span {
+	  display: block;
+	  margin-bottom: 1.2rem;
+	}
+
+	.global-navbar nav a:hover, .global-navbar nav a:focus, .global-navbar nav a:active .global-navbar nav a:visited, .global-navbar nav a.home, .global-navbar nav a.about, .global-navbar nav a.services, .global-navbar nav a.join, .global-navbar nav a.portfolio {
+	  border-bottom: solid 2px #B1DD01;
+	}
+
+	.nav-link {
+	  text-transform: uppercase;
 	}
 
 	section.mntech-logo {
@@ -30,6 +34,24 @@
 		text-align: center;
 	}
 
+	section.navigation nav a {
+		border-bottom: solid 2px #123855;
+		margin-bottom: 2rem;
+		transition: 0.25s ease-in;
+	}
+
+	@media screen and (max-width: 815px) {
+		/* All tablets in portrait and cell phones*/
+	}
+
+@supports  (grid-area: auto) {
+
+	.global-navbar {
+		display: grid;
+		grid-template-rows: 16vh;
+		grid-template-columns: minmax(17.5rem, auto) 58rem;
+	}
+
 	section.navigation nav {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(11.3rem, 1fr));
@@ -38,29 +60,6 @@
 
 	section.navigation nav a {
 		align-self: end;
-		border-bottom: solid 2px var(--navy);
-		margin-bottom: 2rem;
-		transition: 0.25s ease-in;
 	}
 
-	section.navigation nav a span {
-		display: block;
-		margin-bottom: 1.2rem;
-	}
-
-	.global-navbar nav a:hover,
-	.global-navbar nav a:focus,
-	.global-navbar nav a:active
-	.global-navbar nav a:visited,
-	.global-navbar nav a.home,
-	.global-navbar nav a.about,
-	.global-navbar nav a.services,
-	.global-navbar nav a.join,
-	.global-navbar nav a.portfolio {
-		border-bottom: solid 2px var(--vibrant-green);
-	}
-
-	.nav-link {
-		text-transform: uppercase;
-	}
 }
