@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .logo-container-landing {
@@ -52,6 +53,8 @@
 .navigate-text.large {
   font-size: 10rem;
 }
+
+/*Media Queries*/
 
 @media screen and (max-width: 715px) {
   .logo-container-landing {

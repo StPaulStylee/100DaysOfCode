@@ -10,13 +10,6 @@
   margin-top: 5rem;
 }
 
-.line-creator {
-  background-color: #C0C5CE;;
-  height: 1px;
-  margin: 0 auto 4rem;
-  width: 50%;
-}
-
 @supports  (grid-area: auto) {
 
 .portfolio-page {

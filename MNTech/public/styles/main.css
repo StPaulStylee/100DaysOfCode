@@ -261,38 +261,11 @@ textarea:hover, textarea:focus, textarea:active {
 	padding: 0 0 1rem 0;
 }
 
-
-/*--------------------------------------------------------------------------------------------
-Media Queries for Shared Styles
----------------------------------------------------------------------------------------------*/
-
-@media screen and (max-width: 1100px) {
-	.page,
-	.global-navbar {
-		width: unset;
-	}
-}
-
-@media screen and (max-width: 1085px) {
-
-	.header-title {
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 975px) {
-	.header-title {
-		font-size: 4rem;
-	}
-	.content-container .header-content {
-		font-size: 1.6rem;
-	}
-}
-
-@media screen and (max-width: 815px) {
-	.global-navbar {
-		background-color: red;
-	}
+.line-creator {
+  background-color: #C0C5CE;;
+  height: 1px;
+  margin: 0 auto 4rem;
+  width: 50%;
 }
 
 @supports  (grid-area: auto) {
@@ -350,5 +323,38 @@ Media Queries for Shared Styles
 footer {
 	/*display: none;*/
 }
+}
 
+
+/*--------------------------------------------------------------------------------------------
+Media Queries for Shared Styles
+---------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+	.page,
+	.global-navbar {
+		width: unset;
+	}
+}
+
+@media screen and (max-width: 1085px) {
+
+	.header-title {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.header-title {
+		font-size: 4rem;
+	}
+	.content-container .header-content {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.page {
+		display: block;
+	}
 }

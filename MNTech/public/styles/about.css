@@ -55,7 +55,7 @@
 
   .member {
     display: grid;
-    grid-template-rows: 11rem 40rem;
+    grid-template-rows: 11rem auto;
     grid-template-columns: repeat(8, 1fr);
   }
 
@@ -67,6 +67,10 @@
   .bio-header-container, .bio-content-container {
     grid-column: 2/8;
     margin: 1rem;
+  }
+
+  .bio-content {
+    margin-bottom: 4rem;
   }
 
   .bio-container {
