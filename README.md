@@ -273,3 +273,9 @@ Getting closer. Very close actually. I just keep getting stuck on these seemingl
 Favicon, fixed landing page mishaps, began mobile styling via media Queries
 ### Thoughts:
 So close!
+
+# Day 58: January 31st, 2018
+### What I did:
+Built the navigation hamburger for mobile navigation as well as started mobile styling for content pages
+### Thoughts:
+I turned off my top level grid for mobile but my nested grids are still intact - that is awesome because it will save me a lot of work in some places
