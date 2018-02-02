@@ -188,15 +188,23 @@ Buttons
 /*--------------------------------------------------------------------------------------------
 Shared Styles
 ---------------------------------------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+}
+
+.page,
+.global-navbar,
+footer {
+	margin: 0 auto;
+	max-width: 110rem;
+	position: relative;
+}
 
 .page,
 .global-navbar {
-	position:relative;
 	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-	margin: 0 auto;
-	width: 110rem;
 }
 
 .page:before, .page:after,
@@ -321,7 +329,17 @@ textarea:hover, textarea:focus, textarea:active {
 }
 
 footer {
-	/*display: none;*/
+	align-items: center;
+	display: flex;
+	font-size: 1.2rem;
+	height: 2.5rem;
+	justify-content: center;
+}
+
+.contact-email:hover,
+.contact-email:focus,
+.contact-email:active {
+	text-decoration: underline;
 }
 }
 
@@ -357,4 +375,67 @@ Media Queries for Shared Styles
 	.page {
 		display: block;
 	}
+
+	.page-header.home-header,
+	.portfolio-header {
+		padding: 7rem 0;
+	}
+
+	.service {
+		padding: 3rem 0;
+	}
+
+	.content-container .header-content {
+		grid-column: 5 / 29;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.header-title {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header-title {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.header-title {
+		font-size: 2.75rem;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.header-title {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.header-title {
+		font-size: 2.25rem;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.header-title {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.header-title {
+		font-size: 1.7rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+  .header-title {
+    font-size: 1.6rem;
+		font-weight: 400;
+  }
 }
