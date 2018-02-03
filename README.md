@@ -280,8 +280,14 @@ Built the navigation hamburger for mobile navigation as well as started mobile s
 ### Thoughts:
 I turned off my top level grid for mobile but my nested grids are still intact - that is awesome because it will save me a lot of work in some places
 
-#Day 59: February 1st, 2018
+# Day 59: February 1st, 2018
 ### What I did:
 Completed all of the media queries for the home page and also used flex box for the footer.
 ### Thoughts:
 I will have this done by the end of the weekend. Chyeah!
+
+# Day 60: February 2nd, 2018
+### What I did:
+Completed all media queries for all pages - with exception to the survey and mobile navigation.
+### Thoughts:
+Used grid a lot tonight, still loving it.
