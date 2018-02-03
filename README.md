@@ -291,3 +291,9 @@ I will have this done by the end of the weekend. Chyeah!
 Completed all media queries for all pages - with exception to the survey and mobile navigation.
 ### Thoughts:
 Used grid a lot tonight, still loving it.
+
+# Day 61: February 3rd, 2018
+### What I did:
+Mobile Navigation complete.
+### Thoughts:
+I want to add some transition to the mobile nav but it's date night... I might just have to move on because I want to finish this thing... We'll see... no pressure!
