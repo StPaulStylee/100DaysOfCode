@@ -1,6 +1,7 @@
 
-.landing-page.page {
+.landing-page {
   background-color: #333D46;
+  display: grid;
   left: 0;
   margin: unset;
   position: fixed;

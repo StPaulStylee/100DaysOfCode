@@ -17,10 +17,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.portfolio-page .content-container .header-content {
-  grid-column: 9 / 25;
-}
-
 .portfolio-column-header {
   text-align: center;
 }
@@ -49,5 +45,10 @@
   margin: 2rem auto;
   width: 10rem;
 }
+}
 
+@media screen and (max-width: 815px) {
+  .portfolio-item {
+    justify-items: center;
+  }
 }

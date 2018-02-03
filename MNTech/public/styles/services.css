@@ -1,3 +1,13 @@
+.description-input {
+  height: 20rem;
+}
+
+.services-link:hover,
+.services-link:focus,
+.services-link:active {
+  text-decoration: underline;
+}
+
 @supports  (grid-area: auto) {
 
 .request-form {
@@ -11,9 +21,10 @@
 .submit-button, .sample-container {
   grid-column: 1 / 3;
 }
-
-.description-input {
-  height: 20rem;
 }
 
+@media screen and (max-width: 505px) {
+  .request-form {
+    display: block;
+  }
 }
