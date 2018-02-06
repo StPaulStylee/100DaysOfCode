@@ -192,6 +192,10 @@ body {
 	overflow-x: hidden;
 }
 
+.body-wrap {
+	overflow-x: hidden;
+}
+
 .page,
 .global-navbar,
 footer {
