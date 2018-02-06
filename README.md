@@ -297,3 +297,9 @@ Used grid a lot tonight, still loving it.
 Mobile Navigation complete.
 ### Thoughts:
 I want to add some transition to the mobile nav but it's date night... I might just have to move on because I want to finish this thing... We'll see... no pressure!
+
+# Day 63: February 5th, 2018
+### What I did:
+I finished the MnTech site using grid. I think it is an improvement from the first go around. I also launced it on Digital Ocean.
+### Thoughts:
+Ah, that's better. I'm glad to have learned Grid and now I can use it going forward. Still a little annoyed it took me nearly 2/3s of the 100 days to finish, but it is what it is. Now I can move on to something new!

@@ -2,8 +2,9 @@ const router = require('express').Router();
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
-  host: 'mntech.co', // Hope this is right!
-  service: 'gmail',
+  host: 'smtp.zoho.com',
+  port: 465,// Hope this is right!
+  secure: true,
   auth: {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD
@@ -24,9 +25,10 @@ let sendMail = function(mailOptions) {
 }
 
 router.post('/quoteMailer', function(req, res) {
+  console.log("What's in here: ", req.body);
   // setup email data with unicode symbols
   let mailOptions = {
-      from: req.body.from, // sender address
+      from: "admin@mntech.co" , // sender address
       to: req.body.to, // list of receivers
       subject: req.body.subject, // Subject line
       name: req.body.name,
@@ -47,7 +49,7 @@ router.post('/memberMailer', function(req, res) {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: req.body.from, // sender address
+      from: "admin@mntech.co", // sender address
       to: req.body.to, // list of receivers
       subject: req.body.subject, // Subject line
       name: req.body.name,

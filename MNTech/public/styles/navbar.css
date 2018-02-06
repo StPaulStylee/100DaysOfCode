@@ -8,7 +8,7 @@
 	  margin-bottom: 1.2rem;
 	}
 
-	.global-navbar nav a:hover, .global-navbar nav a:focus, .global-navbar nav a:active .global-navbar nav a:visited, .global-navbar nav a.home, .global-navbar nav a.about, .global-navbar nav a.services, .global-navbar nav a.join, .global-navbar nav a.portfolio {
+	.global-navbar nav a:hover, .global-navbar nav a:focus, .global-navbar nav a.home, .global-navbar nav a.about, .global-navbar nav a.services, .global-navbar nav a.join, .global-navbar nav a.portfolio {
 	  border-bottom: solid 2px #B1DD01;
 	}
 

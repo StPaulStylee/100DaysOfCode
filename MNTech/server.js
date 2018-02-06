@@ -3,8 +3,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 require('dotenv').config();
-//const router = express.Router();
-// const router = require('router'); Router placed on this line
 
 //routes
 const nodeMailerRoute = require('./routes/nodeMailerRoute');

@@ -1,9 +1,6 @@
 angular.module('mnTechSite')
        .config(function($routeProvider, $locationProvider) {
-         $routeProvider.when('/landing', {
-           templateUrl: 'views/landing.html',
-           controller: 'LandingController as landing'
-         }).when('/home', {
+         $routeProvider.when('/home', {
            templateUrl: 'views/home.html',
            controller: 'HomeController as home'
          }).when('/about', {
@@ -12,15 +9,9 @@ angular.module('mnTechSite')
          }).when('/services', {
            templateUrl: 'views/services.html',
            controller: 'ServicesController as services'
-         }).when('/join', {
-           templateUrl: 'views/join.html',
-           controller: 'JoinController as join'
          }).when('/blog', {
            templateUrl: 'views/blog.html',
            controller: 'BlogController as blog'
-         }).when('/bylaws', {
-           templateUrl: 'views/bylaws.html',
-           controller: 'BylawsController as laws'
          }).when('/portfolio', {
            templateUrl: 'views/portfolio.html',
            controller: 'PortfolioController as portfolio'
@@ -28,7 +19,7 @@ angular.module('mnTechSite')
            templateUrl: 'views/survey.html',
            controller: 'SurveyController as survey'
          }).otherwise({
-           redirectTo: '/landing'
+           redirectTo: '/home'
          });
          $locationProvider.html5Mode(true);
        });

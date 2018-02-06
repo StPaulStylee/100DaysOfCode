@@ -4,11 +4,6 @@ angular.module('mnTechSite')
 function ServicesController(EmailService, StyleService) {
 
   const ctrl = this;
- //
- //  ctrl.setActive = function(route) {
- //    StyleService.setActive(route)
- // }
- ctrl.isFocused;
 
   ctrl.sendQuoteData = function(data) {
     data.subject = "Requesting A Quote"
@@ -18,8 +13,9 @@ function ServicesController(EmailService, StyleService) {
       console.log("Response from submit: ", response);
     });
   }
-
-  ctrl.setFocus = function(bool) {
-    ctrl.isFocused = bool;
+  ctrl.setActive = function(route) {
+    StyleService.setActive(route);
   }
+
+  ctrl.setActive('services');
 }

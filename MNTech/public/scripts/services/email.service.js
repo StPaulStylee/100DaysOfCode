@@ -16,7 +16,7 @@ function EmailService($http) {
         subject: data.subject,
         sender: data.email,
         email: data.email,
-        to: 'mntechcoop@gmail.com',
+        to: 'contact@mntech.co',
         phone: data.phone,
         organization: data.organization,
         description: data.description,
@@ -36,7 +36,7 @@ function EmailService($http) {
         subject: data.subject,
         sender: data.email,
         email: data.email,
-        to: 'mntechcoop@gmail.com',
+        to: 'contact@mntech.co',
         phone: data.phone,
         sample: data.sample,
         info: data.info,
@@ -50,7 +50,7 @@ function EmailService($http) {
       service.sendSurveyData = function(data) {
         console.log("In the service: ", data);
         service.emailData = {
-          to: 'mntechcoop@gmail.com',
+          to: 'contact@mntech.co',
           subject:data.subject,
           goals:data.goals,
           websitesWeLike:data.website,

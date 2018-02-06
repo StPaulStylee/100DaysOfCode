@@ -281,6 +281,10 @@ textarea:hover, textarea:focus, textarea:active {
   width: 50%;
 }
 
+.baseCall {
+	display: none;
+}
+
 @supports  (grid-area: auto) {
 
 .page {
