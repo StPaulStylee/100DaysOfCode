@@ -303,3 +303,7 @@ I want to add some transition to the mobile nav but it's date night... I might j
 I finished the MnTech site using grid. I think it is an improvement from the first go around. I also launced it on Digital Ocean.
 ### Thoughts:
 Ah, that's better. I'm glad to have learned Grid and now I can use it going forward. Still a little annoyed it took me nearly 2/3s of the 100 days to finish, but it is what it is. Now I can move on to something new!
+
+# Day 64: February 6th, 2018
+### What I did:
+I took a break from coding this evening to do a little bit of research on what to study next. I was going back and forth between finally taking on some game development, Angular (not angularjs), or Vue.js, or something that will be SQL intensive. I've chosen to study Angular... Vue and React are all the rage right now... But I am going to put my trust in the mega Google on this one. Plus, if I don't like it, I can always move on. After I finish studying Angular, I am going to rebuild and finish a site I started called VG API that uses and video game API built by a company called Giant Bomb. I will of course be using CSS Grid in that project. I also want to try and think of ways to incorporate some more complicated SQL into the project because my experience with it is severely lacking.
