@@ -307,3 +307,9 @@ Ah, that's better. I'm glad to have learned Grid and now I can use it going forw
 # Day 64: February 6th, 2018
 ### What I did:
 I took a break from coding this evening to do a little bit of research on what to study next. I was going back and forth between finally taking on some game development, Angular (not angularjs), or Vue.js, or something that will be SQL intensive. I've chosen to study Angular... Vue and React are all the rage right now... But I am going to put my trust in the mega Google on this one. Plus, if I don't like it, I can always move on. After I finish studying Angular, I am going to rebuild and finish a site I started called VG API that uses and video game API built by a company called Giant Bomb. I will of course be using CSS Grid in that project. I also want to try and think of ways to incorporate some more complicated SQL into the project because my experience with it is severely lacking.
+
+# Day 65, February 7th, 2018
+### What I did:
+I took my first step into learning Angular by scaffolding my first project. I was able to instantly spin up a server and run a test, which was neat.
+### Thoughts:
+Super introductory and therefore I don't have much to go on but I liked it so far... I didn't even have to write a server file, which was rad. Also, this resource uses typescript, so that will be on awesome experience.
