@@ -1,10 +1,17 @@
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-// This is where we make our components known
+import { AppComponent } from './app.component';
+import { TimerComponent } from "./timer.component";
+
 @NgModule({
-  // this is where we include the components we want to use in the module
-  declaration: [AppComponent],
-  // this is the entry point component for our module, usually there is only one
+  declarations: [
+    AppComponent, TimerComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {};
+export class AppModule { }
