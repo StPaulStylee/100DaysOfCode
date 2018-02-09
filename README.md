@@ -313,3 +313,9 @@ I took a break from coding this evening to do a little bit of research on what t
 I took my first step into learning Angular by scaffolding my first project. I was able to instantly spin up a server and run a test, which was neat.
 ### Thoughts:
 Super introductory and therefore I don't have much to go on but I liked it so far... I didn't even have to write a server file, which was rad. Also, this resource uses typescript, so that will be on awesome experience.
+
+# Day 66, February 8th, 2018
+### What I did:
+I built out a Pomodoro timer component
+### Thoughts:
+I'm really enjoying Angular so far. I am trying to use my Mapt subscription again to see if they can redeem themselves after that CSS Grid debacle... So far, i am mixed feelings. The resource is really good at some points, but very poor in others. It is only the first chapter too so that is not the best sign. I will stick with it through chapter 2 and reasses afterwards... If I haven't gotten a good vibe from the resource by then, I will switch over to Lynda, which is always legit.
