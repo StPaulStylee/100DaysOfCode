@@ -319,3 +319,9 @@ Super introductory and therefore I don't have much to go on but I liked it so fa
 I built out a Pomodoro timer component
 ### Thoughts:
 I'm really enjoying Angular so far. I am trying to use my Mapt subscription again to see if they can redeem themselves after that CSS Grid debacle... So far, i am mixed feelings. The resource is really good at some points, but very poor in others. It is only the first chapter too so that is not the best sign. I will stick with it through chapter 2 and reasses afterwards... If I haven't gotten a good vibe from the resource by then, I will switch over to Lynda, which is always legit.
+
+# Day 67, February 14th, 2018
+### What I did:
+Dove deaper into the intracracies of TypeScript via my Angular learning resource.
+### Thoughts:
+Yeah, I know that there is a 6 day gap between the 8th and 14th... But I got sick with something fierce and have been out of commission until today... So in my mind, this is day 67, not 72.
