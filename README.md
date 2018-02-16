@@ -325,3 +325,9 @@ I'm really enjoying Angular so far. I am trying to use my Mapt subscription agai
 Dove deaper into the intracracies of TypeScript via my Angular learning resource.
 ### Thoughts:
 Yeah, I know that there is a 6 day gap between the 8th and 14th... But I got sick with something fierce and have been out of commission until today... So in my mind, this is day 67, not 72.
+
+# Day 68, February 15th, 2018
+### What I did:
+I completed reading the chapter on TypeScript.
+### Thoughts:
+Damn, that was way longer than I realized, I was hoping to be back into Angular tonight. That all good though... Reading the chapter was a good refresher in ES6 and cool because TypeScript has a lot of similarties to Java, which lowers my barriers to entry. Excited to get back into Angular components tomorrow!
