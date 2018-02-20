@@ -331,3 +331,9 @@ Yeah, I know that there is a 6 day gap between the 8th and 14th... But I got sic
 I completed reading the chapter on TypeScript.
 ### Thoughts:
 Damn, that was way longer than I realized, I was hoping to be back into Angular tonight. That all good though... Reading the chapter was a good refresher in ES6 and cool because TypeScript has a lot of similarties to Java, which lowers my barriers to entry. Excited to get back into Angular components tomorrow!
+
+# Day 72, February 19th, 2018
+### What I did:
+Oh man, I FINALLY ACTUALLY FINISHED my TypeScript study. The chapter never ended and was complicated, so I took the opporunity to study a few different resources.
+### Thoughts
+TypeScript is a whole new world. I am excited to get back into building as it seemed to get a bit too academic for my liking. Putting it's features to work by building some things will certainly help make sense of everything.
