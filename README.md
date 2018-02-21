@@ -337,3 +337,9 @@ Damn, that was way longer than I realized, I was hoping to be back into Angular 
 Oh man, I FINALLY ACTUALLY FINISHED my TypeScript study. The chapter never ended and was complicated, so I took the opporunity to study a few different resources.
 ### Thoughts
 TypeScript is a whole new world. I am excited to get back into building as it seemed to get a bit too academic for my liking. Putting it's features to work by building some things will certainly help make sense of everything.
+
+# Day 73, February 20th, 2018
+### What I did:
+Fumbled around with this crap resource from Mapt. I am done with this book and with Mapt.
+### Thoughts:
+After the first chapter I was worried about this resource. Then there was an indepth dive into TypeScript, and I enjoyed that. Then I got back into the chapters where we actually build components and my fears were realized... Poor instructions on the simplest things like where in the file directory we are putting this file... And the imports needed for the files... Just pure crap for a beginner into the framework. I wrote them and told them I was done using there service and asked for a refund... Hopefully I can get one. I will start another Angular course tomorrow on Lynda.
