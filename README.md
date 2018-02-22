@@ -343,3 +343,9 @@ TypeScript is a whole new world. I am excited to get back into building as it se
 Fumbled around with this crap resource from Mapt. I am done with this book and with Mapt.
 ### Thoughts:
 After the first chapter I was worried about this resource. Then there was an indepth dive into TypeScript, and I enjoyed that. Then I got back into the chapters where we actually build components and my fears were realized... Poor instructions on the simplest things like where in the file directory we are putting this file... And the imports needed for the files... Just pure crap for a beginner into the framework. I wrote them and told them I was done using there service and asked for a refund... Hopefully I can get one. I will start another Angular course tomorrow on Lynda.
+
+# Day 74, February 21st, 2018
+### What I did:
+I switched to a new resource from Lynda.com. I ran into some configuration problem with my tsconfig.json file, which took awhile to trouble shoot. Anyways, I basically went over what I already learned earlier last week.
+### Thoughts: 
+A frustrating evening seeing as I really didn't accomplish anything. Trying to get these configured correctly is such a hassle... IDK how anyone is supposed to remember all of this crap. Anyways, I will get back at it tomorrow and hopefully spend more time learning and less time configuring.
