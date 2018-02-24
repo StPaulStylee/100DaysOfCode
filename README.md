@@ -358,6 +358,6 @@ I have a job opporunity that uses Golang. It is not required to complete the cod
 
 #Day 77, February 24th, 2018
 ### What I did:
-Worked with inputting/outputting values to the console in Go. Also used various packages include bufio, strings, os, fmt, and strconv
+Worked with inputting/outputting values to the console in Go. Also used various packages include bufio, strings, os, fmt, and strconv. Also, the math package
 ### Thoughts:
 This is cool, and even if I don't end up landing this job (but I am going to) this isn't all for naught (not?). I am certainly appreciating learning a new language and seeing how they implement things differently than say, Java.
