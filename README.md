@@ -349,3 +349,9 @@ After the first chapter I was worried about this resource. Then there was an ind
 I switched to a new resource from Lynda.com. I ran into some configuration problem with my tsconfig.json file, which took awhile to trouble shoot. Anyways, I basically went over what I already learned earlier last week.
 ### Thoughts: 
 A frustrating evening seeing as I really didn't accomplish anything. Trying to get these configured correctly is such a hassle... IDK how anyone is supposed to remember all of this crap. Anyways, I will get back at it tomorrow and hopefully spend more time learning and less time configuring.
+
+# Day 76, February 23rd, 2018
+### What I did:
+I am taking in a quick tutorial of Golang.
+### Thoughts:
+I have a job opporunity that uses Golang. It is not required to complete the code challenge in that language but I am going to give it a shot anyways. I hope I don't regret this decision! I won't though... I've got until the end of day Tuesday to make a simple REST Api.
