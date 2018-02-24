@@ -355,3 +355,9 @@ A frustrating evening seeing as I really didn't accomplish anything. Trying to g
 I am taking in a quick tutorial of Golang.
 ### Thoughts:
 I have a job opporunity that uses Golang. It is not required to complete the code challenge in that language but I am going to give it a shot anyways. I hope I don't regret this decision! I won't though... I've got until the end of day Tuesday to make a simple REST Api.
+
+#Day 77, February 24th, 2018
+### What I did:
+Worked with inputting/outputting values to the console in Go. Also used various packages include bufio, strings, os, fmt, and strconv
+### Thoughts:
+This is cool, and even if I don't end up landing this job (but I am going to) this isn't all for naught (not?). I am certainly appreciating learning a new language and seeing how they implement things differently than say, Java.
