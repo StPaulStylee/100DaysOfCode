@@ -355,3 +355,15 @@ A frustrating evening seeing as I really didn't accomplish anything. Trying to g
 I am taking in a quick tutorial of Golang.
 ### Thoughts:
 I have a job opporunity that uses Golang. It is not required to complete the code challenge in that language but I am going to give it a shot anyways. I hope I don't regret this decision! I won't though... I've got until the end of day Tuesday to make a simple REST Api.
+
+# Day 77, February 24th, 2018
+### What I did:
+Worked with inputting/outputting values to the console in Go. Also used various packages include bufio, strings, os, fmt, and strconv. Also, the math package
+### Thoughts:
+This is cool, and even if I don't end up landing this job (but I am going to) this isn't all for naught (not?). I am certainly appreciating learning a new language and seeing how they implement things differently than say, Java.
+
+# Day 78, February 25, 2018
+### What I did:
+Learned about arrays, structs, maps, slices, and pointers
+### Thoughts:
+I am really digging this Golang stuff. I think I am excited mostly because I now have experience with 4/5 different languages and it is cool to see the similarities and the differences between them. I feel that this familiarity really makes picking up new languages easier. I gotta finish this course tomorrow though because I gotta start building this thing for the code challenge so I CAN GET THIS JOB!
