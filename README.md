@@ -367,3 +367,9 @@ This is cool, and even if I don't end up landing this job (but I am going to) th
 Learned about arrays, structs, maps, slices, and pointers
 ### Thoughts:
 I am really digging this Golang stuff. I think I am excited mostly because I now have experience with 4/5 different languages and it is cool to see the similarities and the differences between them. I feel that this familiarity really makes picking up new languages easier. I gotta finish this course tomorrow though because I gotta start building this thing for the code challenge so I CAN GET THIS JOB!
+
+# Day 80, February 27, 2018
+### What I did:
+Completed an introductory course on Go programming. Today I learned how to read and write files, traverse directories, make web requests, parse JSON, and spin up a local server
+### Thoughts:
+I really like this language. The syntax is easy and flexible and it has great support and documentation. I am worried I will not be able to complete this code challenge on time, but I am going to give it my best shot. Regardless, I am going to finish it and turn it in. If nothing else, i have learned a new and valuable skill.
