@@ -379,3 +379,10 @@ I really like this language. The syntax is easy and flexible and it has great su
 I started a tutorial where we build a library like web application. Using SQLite3 I have set up an application that calls the Classify API and then stores some books in our books table
 ### Thoughts:
 I like it. I kinda wish I would have used something like Postgres or MySQL seeing as it took me a long time to get SQLite3 up and running - stupid gcc! Anyway, I am enjoying making a full stack application again, it has been too long
+
+# Day 82, March 1st, 2018
+### What I did:
+I was introduced to some web middleware called Negorni. I also built my own middleware function
+
+### Thoughts:
+Negroni seems like it makes things a lot easier and I am curious what other, more popular frameworks, have to offer. 

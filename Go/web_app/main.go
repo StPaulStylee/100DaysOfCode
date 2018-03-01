@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"encoding/json"
 	"encoding/xml"
-	"fmt"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 
+	"github.com/codegangsta/negroni"
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -27,14 +27,18 @@ type SearchResult struct {
 	ID     string `xml:"owi,attr"`
 }
 
+var db *sql.DB
+
 func main() {
 	// template.ParseFiles() returns and error. We wrap that in template.Must() which will absorb the error from Parsefiles and halt
 	// execution of the program - Is this proper error handling??
 	templates := template.Must(template.ParseFiles("templates/index.html"))
 
-	db, _ := sql.Open("sqlite3", "dev.db")
+	db, _ = sql.Open("sqlite3", "dev.db")
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	mux := http.NewServeMux()
+
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		p := Page{Name: "Gopher"}
 		// r.FormValue searches the query parameters for a certain value, in this case name
 		// If name is unset, it will return an empty string and use the default set to "Gopher"
@@ -53,7 +57,7 @@ func main() {
 		// fmt.Fprint(w, "Hello, BITCH")
 	})
 
-	http.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
 		// Dummy data used prior to building search function
 		// results := []SearchResult{
 		// 	SearchResult{"Moby-Dick", "Herman Melville", "1851", "222222"},
@@ -74,16 +78,11 @@ func main() {
 		}
 	})
 
-	http.HandleFunc("/books/add", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/books/add", func(w http.ResponseWriter, r *http.Request) {
 		var book ClassifyBookResponse
 		var err error
 
 		book, err = find(r.FormValue("id"))
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		}
-		//Ping the db to check connection is alive
-		err = db.Ping()
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
@@ -95,9 +94,13 @@ func main() {
 		}
 	})
 
-	// we use nil here to tell the http library to use the default mux we defined above
-	// We wrap the call in fmt.Println() in order to see if any errors are thrown
-	fmt.Println(http.ListenAndServe(":8080", nil))
+	n := negroni.Classic()
+	// Use our custom middleware to check for DB connection
+	n.Use(negroni.HandlerFunc(verifyDataBase))
+	n.UseHandler(mux)
+	// This replaces the listenAndServe
+	n.Run(":8080")
+
 }
 
 type ClassifySearchResponse struct {
@@ -150,4 +153,15 @@ func classifyAPI(url string) ([]byte, error) {
 	defer resp.Body.Close()
 
 	return ioutil.ReadAll(resp.Body)
+}
+
+// next http.HandlerFunc - Notice it's "Handler", not "Handle"
+func verifyDataBase(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
+	err := db.Ping()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		// WE didn't use 'return' in our previous ping. Is this because we are inside of this middleware function?
+		return
+	}
+	next(w, r)
 }
