@@ -4,14 +4,21 @@ import (
 	"database/sql"
 	"encoding/json"
 	"encoding/xml"
-	"html/template"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 
 	"github.com/codegangsta/negroni"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/yosssi/ace"
 )
+
+// type Book struct {
+// 	PK int
+// 	Title string
+// 	Author string
+// 	Classification string
+// }
 
 type Page struct {
 	Name     string
@@ -32,7 +39,11 @@ var db *sql.DB
 func main() {
 	// template.ParseFiles() returns and error. We wrap that in template.Must() which will absorb the error from Parsefiles and halt
 	// execution of the program - Is this proper error handling??
-	templates := template.Must(template.ParseFiles("templates/index.html"))
+	// templates := template.Must(template.ParseFiles("templates/index.html"))  // this is necessary for templates when not using 3rd party engine
+	template, err := ace.Load("templates/index", "", nil) //template, subtemplate, option
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 
 	db, _ = sql.Open("sqlite3", "dev.db")
 
@@ -49,7 +60,8 @@ func main() {
 		p.DBStatus = db.Ping() == nil
 		// ExecuteTemplate() takes the write object, the html, and a data thang and also returns an error
 		// Here, we set err to the returned error object and if it is not nil then we throw the error
-		err := templates.ExecuteTemplate(w, "index.html", p)
+		// err := templates.ExecuteTemplate(w, "index.html", p) // Once again, this goes bye bye because of our 3rd party templating engine
+		err := template.Execute(w, p)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
