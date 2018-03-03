@@ -386,3 +386,9 @@ I was introduced to some web middleware called Negorni. I also built my own midd
 
 ### Thoughts:
 Negroni seems like it makes things a lot easier and I am curious what other, more popular frameworks, have to offer. 
+
+# Day 83, March 2nd, 2018
+### What I did:
+Added post route to post saved books from DB
+### Thoughts:
+Cool
