@@ -392,3 +392,9 @@ Negroni seems like it makes things a lot easier and I am curious what other, mor
 Added post route to post saved books from DB
 ### Thoughts:
 Cool
+
+# Day 84, March 3rd, 2018
+### What I did:
+Add delete functionality to my book collection
+### Thoughts:
+I know how to do CRUD with GO! It's cool. I am excited to finish this course and remake my VG API using Go.

@@ -10,7 +10,6 @@ import (
 	"net/url"
 
 	"github.com/codegangsta/negroni"
-	gmux "github.com/gorilla/mux"
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -54,7 +53,7 @@ func main() {
 
 	db, _ = sql.Open("sqlite3", "dev.db")
 
-	mux := gmux.NewRouter()
+	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		p := Page{Books: []Book{}}
@@ -77,7 +76,7 @@ func main() {
 		}
 		// This is what is written to the browser
 		// fmt.Fprint(w, "Hello, BITCH")
-	}).Methods("GET")
+	})
 
 	mux.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
 		// Dummy data used prior to building search function
@@ -98,9 +97,9 @@ func main() {
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
-	}).Methods("POST")
+	})
 
-	mux.HandleFunc("/books", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/books/add", func(w http.ResponseWriter, r *http.Request) {
 		var book ClassifyBookResponse
 		var err error
 
@@ -126,14 +125,14 @@ func main() {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 		w.WriteHeader(http.StatusOK)
-	}).Methods("PUT")
+	})
 
-	mux.HandleFunc("/books/{pk}", func(w http.ResponseWriter, r *http.Request) {
-		_, err := db.Exec("DELETE from books where pk = ?", gmux.Vars(r)["pk"])
+	mux.HandleFunc("/books/delete", func(w http.ResponseWriter, r *http.Request) {
+		_, err := db.Exec("DELETE from books where pk = ?", r.FormValue("pk"))
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
-	}).Methods("DELETE")
+	})
 
 	n := negroni.Classic()
 	// Use our custom middleware to check for DB connection
