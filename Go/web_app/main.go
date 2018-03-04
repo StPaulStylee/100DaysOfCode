@@ -4,18 +4,24 @@ import (
 	"database/sql"
 	"encoding/json"
 	"encoding/xml"
-	"fmt"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 
+	"github.com/codegangsta/negroni"
 	_ "github.com/mattn/go-sqlite3"
 )
 
+type Book struct {
+	PK             int
+	Title          string
+	Author         string
+	Classification string
+}
+
 type Page struct {
-	Name     string
-	DBStatus bool
+	Books []Book
 }
 
 // These 'struct tags' (the weird `` xml thing) tells the decorder how to populate this struct from its
@@ -27,22 +33,41 @@ type SearchResult struct {
 	ID     string `xml:"owi,attr"`
 }
 
+type ClassifyBookResponse struct {
+	BookData struct {
+		Title  string `xml:"title,attr"`
+		Author string `xml:"author,attr"`
+		ID     string `xml:"owi,attr"`
+	} `xml:"work"`
+	Classification struct {
+		MostPopular string `xml:"sfa,attr"`
+	} `xml:"recommendations>ddc>mostPopular"`
+}
+
+var db *sql.DB
+
 func main() {
 	// template.ParseFiles() returns and error. We wrap that in template.Must() which will absorb the error from Parsefiles and halt
 	// execution of the program - Is this proper error handling??
 	templates := template.Must(template.ParseFiles("templates/index.html"))
 
-	db, _ := sql.Open("sqlite3", "dev.db")
+	db, _ = sql.Open("sqlite3", "dev.db")
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		p := Page{Name: "Gopher"}
-		// r.FormValue searches the query parameters for a certain value, in this case name
-		// If name is unset, it will return an empty string and use the default set to "Gopher"
-		name := r.FormValue("name")
-		if name != "" {
-			p.Name = name
+	mux := http.NewServeMux()
+
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		p := Page{Books: []Book{}}
+		rows, _ := db.Query("SELECT pk, title, author, classification FROM books")
+		// iterate our rows object to pull the data from each book object
+		for rows.Next() {
+			//Create a blank book object
+			var b Book
+			// scan our the current row and place its conents in our book
+			// The order of the scan args must match the order in which we returned the columns in our DB query
+			rows.Scan(&b.PK, &b.Title, &b.Author, &b.Classification)
+			p.Books = append(p.Books, b)
 		}
-		p.DBStatus = db.Ping() == nil
+
 		// ExecuteTemplate() takes the write object, the html, and a data thang and also returns an error
 		// Here, we set err to the returned error object and if it is not nil then we throw the error
 		err := templates.ExecuteTemplate(w, "index.html", p)
@@ -53,7 +78,7 @@ func main() {
 		// fmt.Fprint(w, "Hello, BITCH")
 	})
 
-	http.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
 		// Dummy data used prior to building search function
 		// results := []SearchResult{
 		// 	SearchResult{"Moby-Dick", "Herman Melville", "1851", "222222"},
@@ -74,7 +99,7 @@ func main() {
 		}
 	})
 
-	http.HandleFunc("/books/add", func(w http.ResponseWriter, r *http.Request) {
+	mux.HandleFunc("/books/add", func(w http.ResponseWriter, r *http.Request) {
 		var book ClassifyBookResponse
 		var err error
 
@@ -82,37 +107,44 @@ func main() {
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
-		//Ping the db to check connection is alive
-		err = db.Ping()
+
+		result, err := db.Exec("insert into books (pk, title, author, id, classification) values (?, ?, ?, ?, ?)",
+			nil, book.BookData.Title, book.BookData.Author, book.BookData.ID, book.Classification.MostPopular)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
+		pk, _ := result.LastInsertId()
+		b := Book{
+			PK:             int(pk),
+			Title:          book.BookData.Title,
+			Author:         book.BookData.Author,
+			Classification: book.Classification.MostPopular,
+		}
+		err = json.NewEncoder(w).Encode(b)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+		}
+		w.WriteHeader(http.StatusOK)
+	})
 
-		_, err = db.Exec("insert into books (pk, title, author, id, classification) values (?, ?, ?, ?, ?)",
-			nil, book.BookData.Title, book.BookData.Author, book.BookData.ID, book.Classification.MostPopular)
+	mux.HandleFunc("/books/delete", func(w http.ResponseWriter, r *http.Request) {
+		_, err := db.Exec("DELETE from books where pk = ?", r.FormValue("pk"))
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 	})
 
-	// we use nil here to tell the http library to use the default mux we defined above
-	// We wrap the call in fmt.Println() in order to see if any errors are thrown
-	fmt.Println(http.ListenAndServe(":8080", nil))
+	n := negroni.Classic()
+	// Use our custom middleware to check for DB connection
+	n.Use(negroni.HandlerFunc(verifyDataBase))
+	n.UseHandler(mux)
+	// This replaces the listenAndServe
+	n.Run(":8080")
+
 }
 
 type ClassifySearchResponse struct {
 	Results []SearchResult `xml:"works>work"`
-}
-
-type ClassifyBookResponse struct {
-	BookData struct {
-		Title  string `xml:"title,attr"`
-		Author string `xml:"author,attr"`
-		ID     string `xml:"owi,attr"`
-	} `xml:"work"`
-	Classification struct {
-		MostPopular string `xml:"sfa,attr"`
-	} `xml:"recommendations>ddc>mostPopular"`
 }
 
 func find(id string) (ClassifyBookResponse, error) {
@@ -150,4 +182,15 @@ func classifyAPI(url string) ([]byte, error) {
 	defer resp.Body.Close()
 
 	return ioutil.ReadAll(resp.Body)
+}
+
+// next http.HandlerFunc - Notice it's "Handler", not "Handle"
+func verifyDataBase(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
+	err := db.Ping()
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		// WE didn't use 'return' in our previous ping. Is this because we are inside of this middleware function?
+		return
+	}
+	next(w, r)
 }

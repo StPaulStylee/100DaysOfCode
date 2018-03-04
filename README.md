@@ -382,6 +382,14 @@ I like it. I kinda wish I would have used something like Postgres or MySQL seein
 
 # Day 82, March 1st, 2018
 ### What I did:
-I built out the schema for the programing challenge.
+I was introduced to some web middleware called Negorni. I also built my own middleware function. Also, I built out the schema for the programming challenge.
+
 ### Thoughts:
-My SQL skils are so rusty.
+Negroni seems like it makes things a lot easier and I am curious what other, more popular frameworks, have to offer. 
+
+# Day 83, March 2nd, 2018
+### What I did:
+Added post route to post saved books from DB
+### Thoughts:
+Cool
+
