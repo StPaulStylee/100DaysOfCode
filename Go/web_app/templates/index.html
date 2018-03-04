@@ -7,9 +7,29 @@
   <title>Document</title>
 
   <style>
-    #search-results tr:hover {
+    #search-results tr:hover,
+    #view-results {
       background-color: lightgray;
       cursor: pointer;
+    }
+
+    #page-switcher {
+      width: 100%;
+      text-align: center;
+    }
+    #page-switcher button {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 1em;
+      padding: .3em;
+    }
+
+    #search-page {
+      display: none;
+    }
+
+    table {
+      width: 100%;
     }
   </style>
 
@@ -32,7 +52,12 @@
             row.on("click", function() {
               $.ajax({
                 url: "/books/add?id=" + result.ID,
-                method: "GET"
+                method: "GET",
+                success: function(data) {
+                  var book = JSON.parse(data);
+                  if (!book) return;
+                  $("#view-results").append("<tr id='book-row-'" + book.PK + "><td>" + book.Title + "</td><td>" + book.Author + "</td><td>" + book.Classification + "</td><td><button onClick='deleteBook(" + book.PK + ")</td></tr>");
+                }
               })
             })
           })
@@ -41,21 +66,73 @@
       });
       return false //Necessary to stop button default behavior
     }
+
+    function deleteBook(pk) {
+      $.ajax({
+        url: "/books/delete?pk=" + pk,
+        method: "GET",
+        success: function() {
+          $("#book-row-" + pk).remove();
+        } 
+      })
+    }
+    
+
+    function showSearchPage() {
+      $("#search-page").show();
+      $("#view-page").hide();
+    }
+    function showViewPage() {
+      $("#search-page").hide();
+      $("#view-page").show();
+    }
   </script>
 </head>
 <body>
-  <form id="search-form" onsubmit="return false">
-    <input name="search" />
-    <input type="submit" value="Search" onclick="submitSearch()"/>
-  </form>
+  <div id="page-switcher">
+    <button onClick="showViewPage()">View Library</button>
+    <button onClick="showSearchPage()">Add Books</button>
+  </div>
 
-  <table width="100%">
-    <thead></thead>
+  <div id="search-page">
+    <form id="search-form" onsubmit="return false">
+      <input name="search" />
+      <input type="submit" value="Search" onclick="submitSearch()"/>
+    </form>
+      
+     <table>
+      <thead></thead>
       <th width="40%">Title</th>
       <th width="30%">Author</th>
       <th width="10%">Year</th>
       <th width="20%">ID</th>
-    <tbody id="search-results"></tbody>
-  </table>
+      <tbody id="search-results"></tbody>
+    </table>
+  </div>
+
+  <div id="view-page">
+    <table>
+      <thead></thead>
+      <tr sytle="text-align: left">
+        <th width="45%">Title</th>
+        <th width="35%">Author</th>
+        <th width="20%">Classification</th>
+        <th width="5%"></th>
+      </tr>
+      <tbody id="view-results">
+        {{range .Books}}
+        <tr id="book-row-{{.PK}}">
+          <td>{{.Title}}</td>
+          <td>{{.Author}}</td>
+          <td>{{.Classification}}
+            <button onClick="deleteBook({{.PK}})">Delete</button>
+          </td>
+        </tr>
+        {{end}}
+      </tbody>
+    </table>
+    
+  </div>
+
 </body>
 </html>
