@@ -51,12 +51,12 @@
             searchResults.append(row);
             row.on("click", function() {
               $.ajax({
-                url: "/books?id=" + result.ID,
-                method: "PUT",
+                url: "/books/add?id=" + result.ID,
+                method: "GET",
                 success: function(data) {
                   var book = JSON.parse(data);
                   if (!book) return;
-                  $("#view-results").append("<tr id='book-row-" + book.PK + "'><td>" + book.Title + "</td><td>" + book.Author + "</td><td>" + book.Classification + "<button onClick='deleteBook(" + book.PK + ")'>Delete</button></td></tr>");
+                  $("#view-results").append("<tr id='book-row-'" + book.PK + "><td>" + book.Title + "</td><td>" + book.Author + "</td><td>" + book.Classification + "</td><td><button onClick='deleteBook(" + book.PK + ")</td></tr>");
                 }
               })
             })
@@ -69,8 +69,8 @@
 
     function deleteBook(pk) {
       $.ajax({
-        url: "/books/" + pk,
-        method: "DELETE",
+        url: "/books/delete?pk=" + pk,
+        method: "GET",
         success: function() {
           $("#book-row-" + pk).remove();
         } 
