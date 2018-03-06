@@ -382,7 +382,7 @@ I like it. I kinda wish I would have used something like Postgres or MySQL seein
 
 # Day 82, March 1st, 2018
 ### What I did:
-I was introduced to some web middleware called Negorni. I also built my own middleware function
+I was introduced to some web middleware called Negorni. I also built my own middleware function. Also, I built out the schema for the programming challenge.
 
 ### Thoughts:
 Negroni seems like it makes things a lot easier and I am curious what other, more popular frameworks, have to offer. 
@@ -399,8 +399,11 @@ Add delete functionality to my book collection
 ### Thoughts:
 I know how to do CRUD with GO! It's cool. I am excited to finish this course and remake my VG API using Go.
 
+<<<<<<< HEAD
 ### Day 85, March 5th, 2018
 ### What I did:
 Implemented the 'gorp' package to add a wrapper to my database access
 ### Thoughts:
 Gorp is supposedly supposed to make accessing the DB easier and I believe that is true. It cut the amount of code by at leat 75%. I think I will grasp it better when I implement it into my own project.
+=======
+>>>>>>> 9b39611e213c6addd590bac2e828b002489d5a0c
