@@ -399,11 +399,8 @@ Add delete functionality to my book collection
 ### Thoughts:
 I know how to do CRUD with GO! It's cool. I am excited to finish this course and remake my VG API using Go.
 
-<<<<<<< HEAD
-### Day 85, March 5th, 2018
+# Day 85, March 5th, 2018
 ### What I did:
-Implemented the 'gorp' package to add a wrapper to my database access
+Implemented a package called gorp that is a database wrapper.
 ### Thoughts:
 Gorp is supposedly supposed to make accessing the DB easier and I believe that is true. It cut the amount of code by at leat 75%. I think I will grasp it better when I implement it into my own project.
-=======
->>>>>>> 9b39611e213c6addd590bac2e828b002489d5a0c
