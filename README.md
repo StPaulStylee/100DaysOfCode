@@ -404,3 +404,9 @@ I know how to do CRUD with GO! It's cool. I am excited to finish this course and
 Implemented a package called gorp that is a database wrapper.
 ### Thoughts:
 Gorp is supposedly supposed to make accessing the DB easier and I believe that is true. It cut the amount of code by at leat 75%. I think I will grasp it better when I implement it into my own project.
+
+# Day 86, March 6th, 2018
+### What I did:
+Added session storage and column sorting ability to book collection
+### Thoughts:
+Once this course is over I really need to sit down and look at all of the documentation for these libraries I'm using outside of the Standard Go Libarary - I should study that too. Tonight in particular I felt lost going through the tutorial. That is the other tough part of working all day and doing this stuff at the end of the night... I am real tired and the energy level isn't what it always needs to be to get the best out of this.

@@ -11,6 +11,8 @@ import (
 	"strconv"
 
 	"github.com/codegangsta/negroni"
+	sessions "github.com/goincremental/negroni-sessions"
+	"github.com/goincremental/negroni-sessions/cookiestore"
 	gmux "github.com/gorilla/mux"
 	_ "github.com/mattn/go-sqlite3"
 	"gopkg.in/gorp.v1"
@@ -73,6 +75,18 @@ func verifyDataBase(w http.ResponseWriter, r *http.Request, next http.HandlerFun
 	next(w, r)
 }
 
+func getBookCollection(books *[]Book, sortCol string, w http.ResponseWriter) bool {
+	if sortCol != "title" && sortCol != "author" && sortCol != "classification" {
+		sortCol = "pk"
+	}
+	_, err := dbmap.Select(books, "SELECT * from books ORDER BY"+sortCol)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return false
+	}
+	return true
+}
+
 func main() {
 	initDb()
 	// template.ParseFiles() returns and error. We wrap that in template.Must() which will absorb the error from Parsefiles and halt
@@ -84,11 +98,21 @@ func main() {
 	mux := gmux.NewRouter()
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		var sortColumn string
+		sortBy := sessions.GetSession(r).Get("SortBy")
+		if sortBy != nil {
+			// This converts sortBy to a string
+			sortColumn = sortBy.(string)
+		}
 		p := Page{Books: []Book{}}
+		if !getBookCollection(&p.Books, sortColumn, w) {
+			return
+		}
 		// This is gorp Select(). It takes an object and a sql statement as its arugments
 		_, err := dbmap.Select(&p.Books, "SELECT * from books")
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
 		}
 
 		// This code is not needed when using gorp stuff above
@@ -108,10 +132,26 @@ func main() {
 		err = templates.ExecuteTemplate(w, "index.html", p)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
 		}
 		// This is what is written to the browser
 		// fmt.Fprint(w, "Hello, BITCH")
 	}).Methods("GET")
+
+	mux.HandleFunc("/books", func(w http.ResponseWriter, r *http.Request) {
+		var b []Book
+		if !getBookCollection(&b, r.FormValue("sortBy"), w) {
+			return
+		}
+
+		sessions.GetSession(r).Set("sortBy", r.FormValue("sortBy"))
+
+		err := json.NewEncoder(w).Encode(b)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+	})
 
 	mux.HandleFunc("/search", func(w http.ResponseWriter, r *http.Request) {
 		// Dummy data used prior to building search function
@@ -183,7 +223,9 @@ func main() {
 		w.WriteHeader(http.StatusOK)
 	}).Methods("DELETE")
 
+	//These are all of our middleware declarations
 	n := negroni.Classic()
+	n.Use(sessions.Sessions("go-for-web-dev", cookiestore.New([]byte("my-secret-123"))))
 	// Use our custom middleware to check for DB connection
 	n.Use(negroni.HandlerFunc(verifyDataBase))
 	n.UseHandler(mux)
