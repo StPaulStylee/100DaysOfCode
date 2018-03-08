@@ -410,3 +410,9 @@ Gorp is supposedly supposed to make accessing the DB easier and I believe that i
 Added session storage and column sorting ability to book collection
 ### Thoughts:
 Once this course is over I really need to sit down and look at all of the documentation for these libraries I'm using outside of the Standard Go Libarary - I should study that too. Tonight in particular I felt lost going through the tutorial. That is the other tough part of working all day and doing this stuff at the end of the night... I am real tired and the energy level isn't what it always needs to be to get the best out of this.
+
+# Day 87
+###  What I did:
+I was feeling lazy today so I jist did so e reading on a CS topic - understanding hexadecimal numbers. Base 16!
+### Thoughts:
+One of my goals for this year os to become stronger in the fundamentals. I haven't beem doing great with that but im going to start making the effort
