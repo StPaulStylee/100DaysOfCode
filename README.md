@@ -411,8 +411,8 @@ Added session storage and column sorting ability to book collection
 ### Thoughts:
 Once this course is over I really need to sit down and look at all of the documentation for these libraries I'm using outside of the Standard Go Libarary - I should study that too. Tonight in particular I felt lost going through the tutorial. That is the other tough part of working all day and doing this stuff at the end of the night... I am real tired and the energy level isn't what it always needs to be to get the best out of this.
 
-# Day 91, March 11th, 2018
-### What I did:
-I've completed enough of the Go tut to start building out my own project. Tonight, I researched how I will begin combining Go with Angular 2x. I have a plan of action. First, I will get a functional and basic back-end built w/ Go in which I am able to make calls to Giant Bomb API and recieve results. I will then set up the proper routes to build the basics of a CRUD using data from Giant Bomb. Once all of the basic CRUD operations are in place, I will start implementing my Angular. 
-### Thoughts: 
-Enough learning! Time to start building.
+# Day 87
+###  What I did:
+I was feeling lazy today so I jist did so e reading on a CS topic - understanding hexadecimal numbers. Base 16!
+### Thoughts:
+
