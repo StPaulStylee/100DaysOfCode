@@ -415,4 +415,4 @@ Once this course is over I really need to sit down and look at all of the docume
 ###  What I did:
 I was feeling lazy today so I jist did so e reading on a CS topic - understanding hexadecimal numbers. Base 16!
 ### Thoughts:
-One of my goals for this year os to become stronger in the fundamentals. I haven't beem doing great with that but im going to start making the effort
+
