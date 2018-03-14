@@ -421,3 +421,9 @@ I was feeling lazy today so I jist did so e reading on a CS topic - understandin
 I've completed enough of the Go tut to start building out my own project. Tonight, I researched how I will begin combining Go with Angular 2x. I have a plan of action. First, I will get a functional and basic back-end built w/ Go in which I am able to make calls to Giant Bomb API and recieve results. I will then set up the proper routes to build the basics of a CRUD using data from Giant Bomb. Once all of the basic CRUD operations are in place, I will start implementing my Angular. 
 ### Thoughts: 
 Enough learning! Time to start building.
+
+# Day 93, March 13th, 2018
+### What I did:
+I read a lot on on to properly structure Go code when developing an application
+### Thoughts:
+Frustrated. I know I could start programming by simply throwing everyting into a main.go file, but that seems sloppy. However, I feel I am beginning to waste valuable time. Plus, I am just getting confused by all of this stuff... I think I may be trying too jump to deep, too fast.
