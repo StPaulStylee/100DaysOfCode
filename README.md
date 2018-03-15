@@ -427,3 +427,9 @@ Enough learning! Time to start building.
 I read a lot on on to properly structure Go code when developing an application
 ### Thoughts:
 Frustrated. I know I could start programming by simply throwing everyting into a main.go file, but that seems sloppy. However, I feel I am beginning to waste valuable time. Plus, I am just getting confused by all of this stuff... I think I may be trying too jump to deep, too fast.
+
+# Day 94, March 14th, 2018
+### What I did:
+I started setting up the route to perform simple searches. It is coming along... I should have a functioning search tomorrow and perhaps some other routes
+### Thoughts:
+I like this! It feels good to be building on my own again!
