@@ -433,3 +433,10 @@ Frustrated. I know I could start programming by simply throwing everyting into a
 I started setting up the route to perform simple searches. It is coming along... I should have a functioning search tomorrow and perhaps some other routes
 ### Thoughts:
 I like this! It feels good to be building on my own again!
+
+# Day 95, March 15th, 2018
+### What I did:
+Figured out how to correctly parse the json and retrieve what I want out of it
+### Thoughts: 
+Development is like golf. You hate it most of the time because it makes you feel like an idiot, but then you have a moment of success - however small - and you remember why you try and do this. I'll keep at it tomorrow.
+
