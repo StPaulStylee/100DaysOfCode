@@ -446,3 +446,9 @@ I set up a complete /search route that allows me to get dynamic search results f
 ### Thoughts: 
 This was committed on the 18th, but all of the work was done on the 17th. Should have committed earlier!
 
+# Day 98, March 18th, 2018
+### What I did:
+I tried to find a quick way to implement Vuejs into my Golang project, but there isn't a lot of documentation. I decided to get my first version ready to deploy on Heroku
+### Thoughts:
+I decided that I am not going to get out everyting I want out of this Go project if I am trying to implement solutions too quickly without understanding them. Therefore, I took a pause from the build to edit the previous version of my video game data search app and get it ready to deploy to Heroku. I feel frustrated that I have so little to show for the last year of my evening development sessions. With that said, I know I am a better developer now than I was when I graduated Prime ~16 months ago. I have a much better understanding of fundamentals and I believe I can apply this to many different languages. However, I feel I need to choose a language and build a few things with it - it's time to settle in.
+
