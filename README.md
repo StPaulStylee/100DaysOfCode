@@ -1,5 +1,5 @@
 # 100DaysOfCode
-The a challenge I have brought upon myself that will encourage me to code at least an hour a day. I have a lot of unfinished projects in this here repo that I intend to finish over the next ~3 months. I will learn some new things along the way as well.
+The a challenge I have brought upon myself that will encourage me to code at least an hour a day. This repo will hold all of the tut code I grind through, and possibly some small projects, during each session. Also, this repo is home for all of my 100 days challenges... That is why you will see the "Day" counter reset - it is the start of a new round of the challenge.
 
 ## Day 1: December 5th, 2017
 ### What I did:
