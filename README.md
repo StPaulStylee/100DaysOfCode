@@ -452,3 +452,6 @@ I tried to find a quick way to implement Vuejs into my Golang project, but there
 ### Thoughts:
 I decided that I am not going to get out everyting I want out of this Go project if I am trying to implement solutions too quickly without understanding them. Therefore, I took a pause from the build to edit the previous version of my video game data search app and get it ready to deploy to Heroku. I feel frustrated that I have so little to show for the last year of my evening development sessions. With that said, I know I am a better developer now than I was when I graduated Prime ~16 months ago. I have a much better understanding of fundamentals and I believe I can apply this to many different languages. However, I feel I need to choose a language and build a few things with it - it's time to settle in.
 
+# R2D1 - 3/27/2018
+### My new job starts in a little less than a month. The stack is .NET w/ C#, Vue, and Microsoft SQL server. Time to get to work. Tonight was configuration night - I got VS2017 installed and working and then I did some overall system clean up on my PC. Tomorrow, the code will begin.
+
