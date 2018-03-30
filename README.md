@@ -455,3 +455,9 @@ I decided that I am not going to get out everyting I want out of this Go project
 # R2D1 - 3/27/2018
 My new job starts in a little less than a month. The stack is .NET w/ C#, Vue, and Microsoft SQL server. Time to get to work. Tonight was configuration night - I got VS2017 installed and working and then I did some overall system clean up on my PC. Tomorrow, the code will begin.
 
+# R2D2 - 3/28/2018
+When I went to open Visual Studio I noticed that I had corrupt filed when installing yesterday. After trying to redownload a couple of time and it failing, I realized I had better actually put in some effort and solve the problem. I figured out that the corrupt package files were actually saved in a cache folder. Deleting the contents of that folder allowed for a successful install. So, no code, but now I'm ready to go
+
+# R2D3 - 3/29/2018
+I wrote my first "Hello World" from the command line using the 'dotnet new console' CLI command. I also learned where the .dll, the intermediate langauge file, is saved after running the command.Further, I wrote a basic "Hello World" using Visual Studio. WHile I didn't write much code my book I'm using for a resource is littered with a ton of Visual Studio lessons, so currently, my learning isn't just C#, its the IDE as well. That is a good thing too because at my new role we will be using VS and I'd love to come in already comfortable with our tools.
+
