@@ -461,6 +461,9 @@ When I went to open Visual Studio I noticed that I had corrupt filed when instal
 # R2D3 - 3/29/2018
 I wrote my first "Hello World" from the command line using the 'dotnet new console' CLI command. I also learned where the .dll, the intermediate langauge file, is saved after running the command.Further, I wrote a basic "Hello World" using Visual Studio. WHile I didn't write much code my book I'm using for a resource is littered with a ton of Visual Studio lessons, so currently, my learning isn't just C#, its the IDE as well. That is a good thing too because at my new role we will be using VS and I'd love to come in already comfortable with our tools.
 
-# R2D4 - 3/3-/2018
+# R2D4 - 3/30/2018
 I was informed about some super basic stuff types, using decimals and not doubles when needs precision comparisons, and how to use inferred typing if wanted. Most of this stuff I knew but I am always hesitant to skip ahead in case I miss some good nuggets, which I would have if I didn't. A couple of cool things I learned that I didn't know were the '?.' and '??' commands. The '?.' will check if a type is null and if it is, will return null instead of throwing an exception. The '??' command sets a default value for a type if it is null. I should also note that I am not saving any code to for these last few days as it is not really necessary - Why bloat my repo any more than it already is! Once the code starts becoming more meaningful, I will commit it to the GitHub.
+
+# R2D5 - 3/31/2018
+I finished an introductory chapter where you are introduced to the versy basics of C# - nothing too useful for me here except that fact that I am getting good practice at some of the features Visual Studio has to offer. So definitely not time wasted.
 
