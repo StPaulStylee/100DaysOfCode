@@ -467,3 +467,7 @@ I was informed about some super basic stuff types, using decimals and not double
 # R2D5 - 3/31/2018
 I finished an introductory chapter where you are introduced to the versy basics of C# - nothing too useful for me here except that fact that I am getting good practice at some of the features Visual Studio has to offer. So definitely not time wasted.
 
+# R2D7 - 4/2/2018
+I learned about exception handling as well as some cool stuff about program flow - loops basically. This is all fundamental stuff but its useful to see how it's implemented in C# and the unique quirks it has.
+
+
