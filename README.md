@@ -470,4 +470,7 @@ I finished an introductory chapter where you are introduced to the versy basics 
 # R2D7 - 4/2/2018
 I learned about exception handling as well as some cool stuff about program flow - loops basically. This is all fundamental stuff but its useful to see how it's implemented in C# and the unique quirks it has.
 
+# R2D9 - 4/4/2018
+More on exception handling and checking for overflow exceptions. I finally wrote the famous "FizzBuzz" challenge, which was actually pretty damn simple - however, the first go around I had my if/else if logic kinda whacky so truthfully, I didn't get it on the first try.
+
 
