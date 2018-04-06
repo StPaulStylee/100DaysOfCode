@@ -473,4 +473,6 @@ I learned about exception handling as well as some cool stuff about program flow
 # R2D9 - 4/4/2018
 More on exception handling and checking for overflow exceptions. I finally wrote the famous "FizzBuzz" challenge, which was actually pretty damn simple - however, the first go around I had my if/else if logic kinda whacky so truthfully, I didn't get it on the first try.
 
+# R2D10 - 4/5/2018
+Learned about the difference between assemblies and NuGet packages... Althought I really don't understand the difference at this point. I know assemblies are... Ummm... Basically dlls that can be referenced either directly or in a using statement and NuGet packages are... Ummm... Basically the same thing? I'm not entirely sure but I am certain that will come with more exposure. I also found a really cool way in Visual Studio to view all the methods of a particular assembly... Or is it a type? I am a bit lost on what the technical difference of all this stuff is, but it will come. Lastly, I started working withing the String type.
 
