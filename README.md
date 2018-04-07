@@ -479,3 +479,5 @@ Learned about the difference between assemblies and NuGet packages... Althought 
 # R2D10 - 4/6/2018
 I completed the section about the String type and also touched got an introduction to Regular Expressions. This again was basically all review, but it can't hurt to go over the basics! I had a short session tonight - it's been a long damn week. But I will spend at least 90 minutes tomorrow hitting the books.
 
+# R2D11 - 4/7/2018
+I completed the fourth chapter of the book that was all about the standard types of .NET. Specifically, we went over the List, Dictionary, and Set types. All review, but as I've been saying, still helpful. 
