@@ -476,3 +476,6 @@ More on exception handling and checking for overflow exceptions. I finally wrote
 # R2D10 - 4/5/2018
 Learned about the difference between assemblies and NuGet packages... Althought I really don't understand the difference at this point. I know assemblies are... Ummm... Basically dlls that can be referenced either directly or in a using statement and NuGet packages are... Ummm... Basically the same thing? I'm not entirely sure but I am certain that will come with more exposure. I also found a really cool way in Visual Studio to view all the methods of a particular assembly... Or is it a type? I am a bit lost on what the technical difference of all this stuff is, but it will come. Lastly, I started working withing the String type.
 
+# R2D10 - 4/6/2018
+I completed the section about the String type and also touched got an introduction to Regular Expressions. This again was basically all review, but it can't hurt to go over the basics! I had a short session tonight - it's been a long damn week. But I will spend at least 90 minutes tomorrow hitting the books.
+
