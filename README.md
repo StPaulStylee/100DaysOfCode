@@ -483,3 +483,6 @@ I completed the section about the String type and also touched got an introducti
 I completed the fourth chapter of the book that was all about the standard types of .NET. Specifically, we went over the List, Dictionary, and Set types. All review, but as I've been saying, still helpful. 
 # R2D12 - 4/8/2018
 I was introduced to the debugging tools of Visual Studio as well as performance monitoring using the System.Diagnostics namespace.
+
+# R2D11 - 4/19/2018
+I went on a long and well deserved vacation, so I am pretending that I haven't missed anytime! I went over unit testing and OOP basics in C# and Visual Studio 2017.
