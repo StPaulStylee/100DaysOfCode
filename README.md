@@ -486,3 +486,6 @@ I was introduced to the debugging tools of Visual Studio as well as performance 
 
 # R2D11 - 4/19/2018
 I went on a long and well deserved vacation, so I am pretending that I haven't missed anytime! I went over unit testing and OOP basics in C# and Visual Studio 2017.
+
+# R2D12 - 4/20/2018
+Finished the chapter on OOP with C#. More basics but some new things I learned were how to properly implement optional parameters - super cool and useful. Also, how to use C# properties to make getters and setters. Further, the differences in "const" and "readonly" data. Another cool thing is using different data types to use in extending an enum - it all depends on the limit you wish to set to the amount of data items that can be allocated to the enum.
